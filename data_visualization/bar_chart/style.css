@@ -1,0 +1,14 @@
+body,
+text {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: #bdbdbd;
+}
+#y-axis path {
+  stroke: transparent;
+}
+#y-axis line {
+  stroke-dasharray: 2.2;
+}

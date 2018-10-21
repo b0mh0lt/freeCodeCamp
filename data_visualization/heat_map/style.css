@@ -1,0 +1,33 @@
+body,
+text {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #cfd8dc;
+  color: #37474f;
+}
+#x-axis text {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  text-anchor: end;
+}
+.tick.minor > line {
+  stroke-dasharray: 4;
+}
+.tick.minor > text {
+  display: none;
+}
+#title {
+  margin: 1em 0 0.5em 0;
+}
+#description {
+  margin: 0 0 1.5em 0;
+}
+@media only screen and (min-width: 992px) {
+  #title {
+    margin: 2em 0 0.5em 0;
+  }
+  #description {
+    margin: 0 0 2.5em 0;
+  }
+}

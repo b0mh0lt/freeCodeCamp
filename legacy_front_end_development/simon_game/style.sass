@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto")
+
+::selection
+  background: transparent
+
+body
+  background-color: #EEE
+  font-family: "Roboto", sans-serif
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+
+.wrapper
+  height: calc(100vh - 72px)
+  min-height: 500px
+  padding: 15px
+  position: relative
+  @media (min-width:768px)
+    min-height: 630px
+
+  .container
+    height: 470px
+    width: 290px
+    position: absolute
+    margin: auto
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    @media (min-width:768px)
+      height: 600px
+      width: 420px
+
+    .outer
+      position: relative
+      height: 290px
+      width: 290px
+      margin-bottom: 60px
+      @media (min-width:768px)
+        height: 420px
+        width: 420px
+
+      .col
+        cursor: default
+        float: left
+        height: 141px
+        width: 141px
+        @media (min-width:768px)
+          height: 202px
+          width: 202px
+
+      #green
+        background-color: #4CAF50
+        border-top-left-radius: 100%
+        margin: 0 4px 4px 0
+        @media (min-width:768px)
+          margin: 0 8px 8px 0
+
+      #red
+        background-color: #F44336
+        border-top-right-radius: 100%
+        margin: 0 0 4px 4px
+        @media (min-width:768px)
+          margin: 0 0 8px 8px
+
+      #yellow
+        background-color: #FFEB3B
+        border-bottom-left-radius: 100%
+        margin: 4px 4px 0 0
+        @media (min-width:768px)
+          margin: 8px 8px 0 0
+
+      #blue
+        background-color: #2196F3
+        border-bottom-right-radius: 100%
+        margin: 4px 0 0 4px
+        @media (min-width:768px)
+          margin: 8px 0 0 8px
+
+      .inner
+        pointer-events: none
+        height: 145px
+        width: 145px
+        background-color: #EEE
+        border-radius: 50%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        margin: 0 auto
+        @media (min-width:768px)
+          height: 210px
+          width: 210px
+
+        .counter
+          display: none
+          color: #212121
+          font-size: 24px
+          margin: 0
+          text-align: center
+          vertical-align: middle
+          line-height: 145px
+          @media (min-width:768px)
+            font-size: 32px
+            line-height: 210px
+
+    .controls
+      width: 160px
+      margin: 0 auto
+
+      .btn
+        text-decoration: none
+        display: block
+        color: #212121
+        cursor: pointer
+        background-color: #E0E0E0
+        font-size: 14px
+        text-align: center
+        letter-spacing: 0.5px
+        border: none
+        border-radius: 2px
+        height: 36px
+        width: 100%
+        line-height: 36px
+        margin: 15px 0
+        text-transform: uppercase
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+
+      #stop
+        display: none
+
+      .disabled
+        pointer-events: none
+        background-color: #DFDFDF
+        box-shadow: none
+        color: #9F9F9F
+        cursor: default
+
+      .checkbox
+        width: 15px
+        position: relative
+
+        label
+          cursor: pointer
+          position: absolute
+          width: 15px
+          height: 15px
+          top: 0
+          left: 0
+          background: #F5F5F5
+          border: 2px solid #424242
+          border-radius: 2px
+          &:after
+            opacity: 0
+            content: ""
+            position: absolute
+            width: 10px
+            height: 5px
+            background: transparent
+            top: 2px
+            left: 1px
+            border: 3px solid #F5F5F5
+            border-top: none
+            border-right: none
+            transform: rotate(-45deg)
+
+        [type=checkbox]:checked + label
+          background-color: #424242
+
+        [type=checkbox]:checked + label:after
+          opacity: 1
+
+        span
+          color: #212121
+          font-size: 14px
+          line-height: 20px
+          position: absolute
+          top: 0
+          left: 25px
+
+footer
+  background-color: #E0E0E0
+  bottom: 0
+  font-family: "Roboto", sans-serif
+  font-weight: 500
+  height: 42px
+  width: 100%
+  text-align: center
+
+  a
+    color: #A8A8A8
+    line-height: 42px
+    position: relative
+    top: 2px
+    text-decoration: none
+    &:focus, &:hover, &:visited
+      color: #A8A8A8
+
+    .fa-lg
+      vertical-align: text-top
+      margin-right: 4px

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Documentation Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400,500" rel="stylesheet" />
+    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet prefetch"
+      href="https://rawgit.com/bomholtm/fcc/master/_assets/css/bootstrap400beta2.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="img/gatsby.svg" class="d-inline-block align-middle" alt="" />
+        <h1 class="d-inline-block align-middle">
+          Gatsby <span class="d-none d-md-inline-block">Documentation</span><span class="d-md-none">Docs</span>
+        </h1>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#alt-navbar"
+        aria-controls="alt-navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa fa-bars fa-lg"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="alt-navbar">
+        <ul class="navbar-nav mr-auto d-md-none">
+          <li class="nav-item dropdown show">
+            <a
+              class="header dropdown-toggle"
+              href="#"
+              id="quickStartDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >quick start</a
+            >
+            <div class="dropdown-menu show" aria-labelledby="quickStartDropdown">
+              <ul>
+                <li><a class="dropdown-item" href="#Getting_Started">Getting Started</a></li>
+                <li><a class="dropdown-item" href="#Migrating_from_v0_to_v1">Migrating from v0 to v1</a></li>
+                <li><a class="dropdown-item" href="#Building_with_Components">Building with Components</a></li>
+                <li><a class="dropdown-item" href="#Querying_with_GraphQL">Querying with GraphQL</a></li>
+                <li><a class="dropdown-item" href="#Lifecycle_APIs">Lifecycle APIs</a></li>
+                <li><a class="dropdown-item" href="#Deploying">Deploying</a></li>
+                <li><a class="dropdown-item" href="#Starters">Starters</a></li>
+                <li><a class="dropdown-item" href="#Plugins">Plugins</a></li>
+                <li><a class="dropdown-item" href="#PRPL_Pattern">PRPL Pattern</a></li>
+                <li><a class="dropdown-item" href="#Gatsby_on_Windows">Gatsby on Windows</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="header dropdown-toggle"
+              href="#"
+              id="referenceDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >reference</a
+            >
+            <div class="dropdown-menu" aria-labelledby="referenceDropdown">
+              <ul>
+                <li><a class="dropdown-item" href="#Node_Interface">Node Interface</a></li>
+                <li><a class="dropdown-item" href="#API_Specification">API Specification</a></li>
+                <li><a class="dropdown-item" href="#Bound_Action_Creators">Bound Action Creators</a></li>
+                <li><a class="dropdown-item" href="#Gatsby_Browser_APIs">Gatsby Browser APIs</a></li>
+                <li><a class="dropdown-item" href="#Gatsby_Node_APIs">Gatsby Node APIs</a></li>
+                <li><a class="dropdown-item" href="#Gatsby_SSR_APIs">Gatsby SSR APIs</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="header dropdown-toggle"
+              href="#"
+              id="contributingDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >contributing</a
+            >
+            <div class="dropdown-menu" aria-labelledby="contributingDropdown">
+              <ul>
+                <li><a class="dropdown-item" href="#How_to_Contribute">How to Contribute</a></li>
+                <li><a class="dropdown-item" href="#Gatsby_Style_Guide">Gatsby Style Guide</a></li>
+                <li><a class="dropdown-item" href="#Design_Principles">Design Principles</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <span class="navbar-icons ml-auto d-none d-md-flex">
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle disabled"
+              href="#"
+              id="versionDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Version 1.0</a
+            >
+            <div id="test" class="dropdown-menu dropdown-menu-right" aria-labelledby="versionDropdown">
+              <a class="dropdown-item" href="#">Latest (1.x)</a> <a class="dropdown-item" href="#">Version 0</a>
+            </div>
+          </div>
+          <a href="https://github.com/gatsbyjs/gatsby" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-github fa-lg"></i>
+          </a>
+          <a href="https://stackoverflow.com/questions/tagged/gatsby" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-stack-overflow fa-lg"></i>
+          </a>
+          <a href="https://twitter.com/gatsbyjs" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-twitter fa-lg"></i>
+          </a>
+        </span>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="navbar d-none d-md-block" id="navbar">
+          <header class="d-none"></header>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><span class="header">quick start</span></li>
+            <li class="nav-item"><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Migrating_from_v0_to_v1">Migrating from v0 to v1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Building_with_Components">Building with Components</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Querying_with_GraphQL">Querying with GraphQL</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Lifecycle_APIs">Lifecycle APIs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Deploying">Deploying</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Starters">Starters</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Plugins">Plugins</a></li>
+            <li class="nav-item"><a class="nav-link" href="#PRPL_Pattern">PRPL Pattern</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Gatsby_on_Windows">Gatsby on Windows</a></li>
+            <li class="nav-item"><span class="header">reference</span></li>
+            <li class="nav-item"><a class="nav-link" href="#Node_Interface">Node Interface</a></li>
+            <li class="nav-item"><a class="nav-link" href="#API_Specification">API Specification</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Bound_Action_Creators">Bound Action Creators</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Gatsby_Browser_APIs">Gatsby Browser APIs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Gatsby_Node_APIs">Gatsby Node APIs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Gatsby_SSR_APIs">Gatsby SSR APIs</a></li>
+            <li class="nav-item"><span class="header">contributing</span></li>
+            <li class="nav-item"><a class="nav-link" href="#How_to_Contribute">How to Contribute</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Gatsby_Style_Guide">Gatsby Style Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Design_Principles">Design Principles</a></li>
+          </ul>
+        </nav>
+        <main id="main-doc">
+          <section class="main-section" id="Getting_Started">
+            <header><h1>Getting Started</h1></header>
+            <p>Gatsby is a blazing-fast static site generator for React.</p>
+            <h2>Install Gatsby's command line tool</h2>
+            <p><code>npm install --global gatsby-cli</code></p>
+            <h2>Using the Gatsby CLI</h2>
+            <ol>
+              <li>Create a new site. <code>gatsby new gatsby-site</code></li>
+              <li><code>cd gatsby-site</code></li>
+              <li>
+                <code>gatsby develop</code> will start a hot-reloading development environment accessible at
+                <code>localhost:8000</code>
+              </li>
+              <li>
+                Try editing the javascript pages in <code>src/pages</code>. Saved changes will live reload in the
+                browser.
+              </li>
+              <li>
+                <code>gatsby build</code> will perform an optimized production build for your site generating static
+                HTML and per-route JavaScript code bundles.
+              </li>
+              <li><code>gatsby serve</code> starts a local HTML server for testing your built site.</li>
+            </ol>
+            <h2>Using other starters</h2>
+            <p>
+              Running <code>gatsby new</code> installs the default Gatsby starter. There are
+              <a href="#Starters">many other official and community starters</a> you can use to kickstart building your
+              Gatsby site.
+            </p>
+            <h2>Work through the tutorial</h2>
+            <p>
+              It walks you through building a Gatsby site from scratch to a finished polished site.
+              <a href="https://www.gatsbyjs.org/tutorial/" target="_blank" rel="noopener noreferrer"
+                >Go to the tutorial</a
+              >.
+            </p>
+          </section>
+          <section class="main-section" id="Migrating_from_v0_to_v1">
+            <header><h1>Migrating from v0 to v1</h1></header>
+            <h2>Move source directories (pages, components, utils, etc.) under <code>src</code></h2>
+            <p>
+              <a href="https://github.com/gatsbyjs/gatsby/issues/814" target="_blank" rel="noopener noreferrer"
+                >We moved site source files under a “src” directory</a
+              >
+              to cleanly separate them from config/data/build folders so to make integration with various JavaScript
+              tooling (e.g.
+              <a href="https://github.com/prettier/prettier" target="_blank" rel="noopener noreferrer">Prettier</a>)
+              simpler.
+            </p>
+            <p>
+              Everything related to webpack, loaders, Babel, React should work nearly identically under v1 of Gatsby
+              compared to v0 so this part of the migration is super easy.
+            </p>
+            <div class="code">
+              <code><span class="purple">mkdir</span> src</code><br />
+              <code><span class="purple">git mv</span> pages src</code><br />
+              <code><span class="purple">git mv</span> components src</code><br />
+              <code><span class="purple">git mv</span> utils src</code><br />
+              <code>...</code><br />
+            </div>
+            <h2>Replace react-router’s Link component with gatsby-link</h2>
+            <p>
+              <code>gatsby-link</code> is a wrapper for the <code>&lt;Link&gt;</code> component in react-router. It
+              automatically prefixes urls and handles prefetching. Add <code>gatsby-link</code> to your project by
+              running:
+            </p>
+            <p><code>npm install --save gatsby-link</code></p>
+            <p>
+              <code>gatsby-link</code> auto-detects whether to use a plain <code>&lt;Link&gt;</code> or
+              <code>&lt;NavLink&gt;</code> based on what props you pass it. There’s no need to wrap
+              <code>&lt;IndexLink&gt;</code> because it was dropped in react-router v4 in favor of the
+              <code>exact</code> prop.
+            </p>
+            <div class="code">
+              <code
+                ><span class="blue">import</span> Link <span class=" blue">from</span>
+                <span class="purple">'gatsby-link'</span></code
+              ><br /><br />
+              <code><span class="green">// Equivalent to react-router's &lt;Link&gt;</span></code
+              ><br />
+              <code
+                >&lt;<span class="blue">Link</span> <span class="purple">to</span>="<span class="blue">/page-2/</span
+                >"&gt;Page <span class="blue">2</span>&lt;/<span class="blue">Link</span>&gt;</code
+              ><br /><br />
+              <code><span class="green">// Equivalent to react-router's &lt;NavLink&gt;</span></code
+              ><br />
+              <code
+                >&lt;<span class="blue">Link</span> <span class="purple">to</span>="<span class="blue">/page-2/</span>"
+                <span class="purple">activeClassName</span>="<span class="blue">selected</span>"&gt;Page
+                <span class="blue">2</span>&lt;/<span class="blue">Link</span>&gt;</code
+              ><br /><br />
+              <code><span class="green">// `exact` prop replaces &lt;IndexLink&gt; from react-router v3</span></code
+              ><br />
+              <code
+                >&lt;<span class="blue">Link</span> <span class="purple">to</span>="<span class="blue">/</span>"
+                <span class="purple">exact</span>&gt;Home&lt;/<span class="blue">Link</span>&gt;</code
+              ><br />
+            </div>
+            <p>
+              Prefixing links is also now handled automatically by our new <code>&lt;Link&gt;</code> component so remove
+              usages of <code>prefixLink</code> in links.
+            </p>
+            <p>Use <code>gatsby-link</code> everywhere and things will Just Work™.</p>
+          </section>
+          <section class="main-section empty" id="Building_with_Components">
+            <header><h1>Building with Components</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/building-with-components/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/building-with-components/</a
+            >
+          </section>
+          <section class="main-section empty" id="Querying_with_GraphQL">
+            <header><h1>Querying with GraphQL</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/querying-with-graphql/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/querying-with-graphql/</a
+            >
+          </section>
+          <section class="main-section empty" id="Lifecycle_APIs">
+            <header><h1>Lifecycle APIs</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/gatsby-lifecycle-apis/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/gatsby-lifecycle-apis/</a
+            >
+          </section>
+          <section class="main-section empty" id="Deploying">
+            <header><h1>Deploying</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/deploy-gatsby/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/deploy-gatsby/</a
+            >
+          </section>
+          <section class="main-section empty" id="Starters">
+            <header><h1>Starters</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/gatsby-starters/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/gatsby-starters/</a
+            >
+          </section>
+          <section class="main-section empty" id="Plugins">
+            <header><h1>Plugins</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/plugins/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/plugins/</a
+            >
+          </section>
+          <section class="main-section empty" id="PRPL_Pattern">
+            <header><h1>PRPL Pattern</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/prpl-pattern/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/prpl-pattern/</a
+            >
+          </section>
+          <section class="main-section empty" id="Gatsby_on_Windows">
+            <header><h1>Gatsby on Windows</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/gatsby-on-windows/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/gatsby-on-windows/</a
+            >
+          </section>
+          <section class="main-section empty" id="Node_Interface">
+            <header><h1>Node Interface</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/node-interface/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/node-interface/</a
+            >
+          </section>
+          <section class="main-section empty" id="API_Specification">
+            <header><h1>API Specification</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/api-specification/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/api-specification/</a
+            >
+          </section>
+          <section class="main-section empty" id="Bound_Action_Creators">
+            <header><h1>Bound Action Creators</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/bound-action-creators/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/bound-action-creators/</a
+            >
+          </section>
+          <section class="main-section empty" id="Gatsby_Browser_APIs">
+            <header><h1>Gatsby Browser APIs</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/browser-apis/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/browser-apis/</a
+            >
+          </section>
+          <section class="main-section empty" id="Gatsby_Node_APIs">
+            <header><h1>Gatsby Node APIs</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/node-apis/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/node-apis/</a
+            >
+          </section>
+          <section class="main-section empty" id="Gatsby_SSR_APIs">
+            <header><h1>Gatsby SSR APIs</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/ssr-apis/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/ssr-apis/</a
+            >
+          </section>
+          <section class="main-section empty" id="How_to_Contribute">
+            <header><h1>How to Contribute</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/how-to-contribute/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/how-to-contribute/</a
+            >
+          </section>
+          <section class="main-section empty" id="Gatsby_Style_Guide">
+            <header><h1>Gatsby Style Guide</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/gatsby-style-guide/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/gatsby-style-guide/</a
+            >
+          </section>
+          <section class="main-section empty" id="Design_Principles">
+            <header><h1>Design Principles</h1></header>
+            <a href="https://www.gatsbyjs.org/docs/design-principles/" target="_blank" rel="noopener noreferrer"
+              >https://www.gatsbyjs.org/docs/design-principles/</a
+            >
+          </section>
+          <footer>
+            <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer"
+              ><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a
+            >
+          </footer>
+        </main>
+      </div>
+    </div>
+    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery321.min.js"></script>
+    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/popper1123.min.js"></script>
+    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/bootstrap400beta.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

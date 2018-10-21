@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:600|Roboto:400,500');
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  background-color: #78909c;
+  margin-bottom: 42px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.container {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: calc(50vh - 250px);
+  min-height: 500px;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .container {
+    min-height: 650px;
+    padding-top: calc(50vh - 325px);
+  }
+}
+.container .grid {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+}
+@media (min-width: 768px) {
+  .container .grid {
+    width: 450px;
+    height: 450px;
+    margin: 50px auto;
+  }
+}
+.container .grid .field {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  float: left;
+  text-align: center;
+  line-height: 100px;
+}
+@media (min-width: 768px) {
+  .container .grid .field {
+    width: 150px;
+    height: 150px;
+    font-size: 60px;
+    line-height: 150px;
+  }
+}
+.container .grid .top {
+  border-bottom: 3px solid #455a64;
+}
+@media (min-width: 768px) {
+  .container .grid .top {
+    border-bottom: 4px solid #455a64;
+  }
+}
+.container .grid .right {
+  border-left: 3px solid #455a64;
+}
+@media (min-width: 768px) {
+  .container .grid .right {
+    border-left: 4px solid #455a64;
+  }
+}
+.container .grid .bottom {
+  border-top: 3px solid #455a64;
+}
+@media (min-width: 768px) {
+  .container .grid .bottom {
+    border-top: 4px solid #455a64;
+  }
+}
+.container .grid .left {
+  border-right: 3px solid #455a64;
+}
+@media (min-width: 768px) {
+  .container .grid .left {
+    border-right: 4px solid #455a64;
+  }
+}
+.container .grid .horizontal {
+  border-top: 3px solid #455a64;
+  border-bottom: 3px solid #455a64;
+}
+@media (min-width: 768px) {
+  .container .grid .horizontal {
+    border-top: 4px solid #455a64;
+    border-bottom: 4px solid #455a64;
+  }
+}
+.container .grid .vertical {
+  border-right: 3px solid #455a64;
+  border-left: 3px solid #455a64;
+}
+@media (min-width: 768px) {
+  .container .grid .vertical {
+    border-right: 4px solid #455a64;
+    border-left: 4px solid #455a64;
+  }
+}
+.container .controls {
+  width: 200px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container .controls {
+    width: 240px;
+  }
+}
+.container .controls .radio {
+  height: 14px;
+  margin: 10px 0;
+  display: block;
+  float: left;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  .container .controls .radio {
+    height: 16px;
+    width: 120px;
+  }
+}
+.container .controls .radio input {
+  display: none;
+}
+.container .controls .radio label {
+  cursor: pointer;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  min-height: 14px;
+  padding-left: 0;
+  top: 0;
+  left: 18px;
+  background: #eceff1;
+  border: 2px solid #263238;
+  border-radius: 50%;
+}
+.container .controls .radio label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  background: transparent;
+}
+@media (min-width: 768px) {
+  .container .controls .radio label {
+    width: 16px;
+    height: 16px;
+    min-height: 16px;
+  }
+}
+.container .controls .radio [type='radio']:checked + label {
+  background-color: #69f0ae;
+  border: 2px solid #69f0ae;
+}
+.container .controls .radio [type='radio']:checked + label:after {
+  opacity: 1;
+}
+.container .controls .radio span {
+  color: #212121;
+  font-size: 14px;
+  line-height: 14px;
+  position: absolute;
+  top: 0;
+  left: 39px;
+}
+@media (min-width: 768px) {
+  .container .controls .radio span {
+    font-size: 16px;
+    line-height: 16px;
+    left: 42px;
+  }
+}
+footer {
+  position: absolute;
+  background-color: #607d8b;
+  bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 42px;
+  width: 100%;
+  text-align: center;
+}
+footer a {
+  color: #d6dfe3;
+  line-height: 40px;
+  position: relative;
+  top: 2px;
+  text-decoration: none;
+}
+footer a:focus,
+footer a:hover,
+footer a:visited {
+  color: #d6dfe3;
+}
+footer a .fa-lg {
+  vertical-align: text-top;
+  margin-right: 4px;
+}

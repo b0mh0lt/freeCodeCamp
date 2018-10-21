@@ -1,0 +1,451 @@
+const projectName = 'heat-map';
+localStorage.setItem('example_project', 'D3: Heat Map');
+
+class HeatMap extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      containerWidth: null,
+      baseTemperature: 0,
+      monthlyVariance: [],
+      isHovered: false,
+      month: 0,
+      year: 0,
+      temperature: 0
+    };
+    
+    this.resizeContainer = this.resizeContainer.bind(this);
+  }
+  
+  componentDidMount() {
+    fetch('https://rawgit.com/bomholtm/fcc/master/data_visualization/heat_map/data.json')
+      .then(res => res.json())
+      .then(res => {
+          this.setState({
+            baseTemperature: res.baseTemperature,
+            monthlyVariance: res.monthlyVariance
+          });
+        }
+      )
+    
+    this.resizeContainer();
+    window.addEventListener('resize', this.resizeContainer);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resizeContainer);
+  }
+  
+  resizeContainer() {
+    const { containerWidth } = this.state;
+    const currentContainerWidth = this.chartContainer.getBoundingClientRect().width;
+    const shouldResize = containerWidth !== currentContainerWidth;
+    
+    if (shouldResize) {
+      this.setState({
+        containerWidth: currentContainerWidth
+      })
+    }
+  }
+  
+  render() {
+    const { containerWidth, baseTemperature, monthlyVariance, isHovered, month, year, temperature } = this.state;
+    const dimensions = { width: Math.max(containerWidth, 359), height: 480 };
+    const margins = { top: 24, right: 12, bottom: 60, left: 84 };
+    const abbreviations = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+    
+    let minYear = d3.min(monthlyVariance, d => d.year);
+    let maxYear = d3.max(monthlyVariance, d => d.year);
+    let minTemp = Math.round(baseTemperature + d3.min(monthlyVariance, d => d.variance - 1.5));
+    let maxTemp = Math.round(baseTemperature + d3.max(monthlyVariance, d => d.variance + 1.5));
+    let jan = d3.min(monthlyVariance, d => d.month - 1);
+    let dec = d3.max(monthlyVariance, d => d.month - 1);
+    
+    const xScale = d3.scaleLinear()
+      .range([margins.left, dimensions.width - margins.right])
+      .domain([minYear, maxYear]);
+    
+    const yScale = d3.scaleLinear()
+      .range([dimensions.height - margins.bottom, margins.top])
+      .domain([dec + .5, jan - .5]);
+    
+    const tempScale = d3.scalePoint()
+      .range([dimensions.width - 150, dimensions.width - margins.right])
+      .domain([0, 1.5, 3, 4.5, 6, 7.5, 9, 10.5, 12, 13.5, 15]);
+    
+    return (
+      <div style={{padding: 8, textAlign: 'center'}}>
+        
+        <h1 id='title' style={{color: '#263238', fontSize: '1.5em', letterSpacing: 1}}>Land Surface Temperature</h1>
+        
+        <div id='description'>
+          <p style={{fontSize: 14, margin: 0}}>Estimated monthly temperature change (January 1753 - September 2015)</p>
+        </div>
+        
+        <div
+          id='graph'
+          ref={(el) => {this.chartContainer = el}}
+          style={{maxWidth: 1040, margin: '0 auto'}}
+          >
+          <svg width={dimensions.width} height={dimensions.height}>
+            <Cells
+              scales={{xScale, yScale}}
+              dimensions={dimensions}
+              margins={margins}
+              baseTemperature={baseTemperature}
+              monthlyVariance={monthlyVariance}
+              abbreviations={abbreviations}
+              onMouseOverCallback={d => this.setState({
+                isHovered: true,
+                month: d.month,
+                year: d.year,
+                temperature: d3.format('.2f')(baseTemperature + d.variance)
+              })}
+              onMouseOutCallback={d => this.setState({
+                isHovered: false,
+                month: 0,
+                year: 0,
+                temperature: 0
+              })}
+            />
+            <Axes
+              scales={{xScale, yScale}}
+              dimensions={dimensions}
+              margins={margins}
+            />
+            <Tooltip
+              scales={{xScale, yScale}}
+              abbreviations={abbreviations}
+              isHovered={isHovered}
+              month={month}
+              year={year}
+              temperature={temperature}
+              
+            />
+          </svg>
+        </div>
+        
+        <div id='legend'>
+          <svg width={dimensions.width} height={120}>
+            <TempCells
+              scale={tempScale}
+              temp={[0, 1.5, 3, 4.5, 6, 7.5, 9, 10.5, 12, 13.5]}
+            />
+            <Axis
+              axisFunction={d3.axisBottom}
+              scale={tempScale}
+              id='temp-axis'
+              translate={`translate(0, 21)`}
+              ticks={11}
+              tickSizeOuter={0}
+              tickSizeInner={6}
+              tickPadding={4}
+              tickFormat={d3.format('d')}
+            />
+            <AxisLegend
+              translate={`translate(${dimensions.width - 136}, 60)`}
+              text={'Temperature (°C)'}
+            />
+          </svg>
+        </div>
+        
+        <a href='https://github.com/bomholtm/fcc' target='_blank' rel='noopener noreferrer' style={{color: '#607D8B', textDecoration: 'none', fontWeight: 700, fontSize: 15}}>
+          <i className='fab fa-github-alt fa-lg' style={{marginRight: '.5em'}}></i>
+          bomholtm/fcc
+        </a>
+        
+      </div>
+    );
+  }
+}
+
+class Axes extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    const { scales, dimensions, margins } = this.props;
+    const { xScale, yScale } = scales;
+    const { height, width } = dimensions;
+    const { top, right, bottom, left } = margins;
+
+    return (
+      <g>
+        <Axis
+          axisFunction={d3.axisBottom}
+          scale={xScale}
+          id='x-axis'
+          translate={`translate(0, ${height - bottom})`}
+          ticks={26}
+          tickSizeOuter={0}
+          tickSizeInner={6}
+          tickPadding={0}
+          tickFormat={d3.format('d')}
+        />
+        <Axis
+          axisFunction={d3.axisLeft}
+          scale={yScale}
+          id='y-axis'
+          translate={`translate(${left}, 0)`}
+          ticks={12}
+          tickSizeOuter={0}
+          tickSizeInner={6}
+          tickPadding={4}
+          tickFormat={function(d) {
+            var date = new Date(0);
+            date.setMonth(d);
+            return d3.timeFormat('%B')(date);
+          }}
+        />
+      </g>
+    );
+  }
+}
+
+class Axis extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  componentDidMount() {
+    this.renderAxis();
+  }
+  
+  componentDidUpdate() {
+    this.renderAxis();
+  }
+  
+  renderAxis() {
+    const { axisFunction, scale, ticks, tickSizeOuter, tickSizeInner, tickPadding, tickFormat } = this.props;
+    
+    let axis = axisFunction()
+      .scale(scale)
+      .ticks(ticks)
+      .tickSizeOuter(tickSizeOuter)
+      .tickSizeInner(tickSizeInner)
+      .tickPadding(tickPadding)
+      .tickFormat(tickFormat);
+    
+    d3.select(this.axisElement).call(axis);
+    d3.selectAll('#x-axis text').attr('dx', '-10px').attr('dy', '-2px');
+    d3.selectAll('#x-axis .tick').each(function(d, i) {  
+      d3.select(this).classed('minor', (i % 2 !== 0));
+    });
+    d3.selectAll('#temp-axis .tick').each(function(d, i) {  
+      d3.select(this).classed('minor', (i % 2 !== 0));
+    });
+  }
+  
+  render() {
+    return (
+      <g
+        id={this.props.id}
+        ref={(el) => {this.axisElement = el;}}
+        transform={this.props.translate}
+        style={{fontSize: 12}}
+      />
+    );
+  }
+}
+
+class AxisLegend extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    const { translate, text } = this.props;
+    return (
+      <g transform={translate}>
+        <text style={{fontSize: 10, fontWeight: 700, fill: '#263238', letterSpacing: 1}}>{text}</text>
+      </g>
+    );
+  }
+}
+
+class Cells extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    const { scales, dimensions, margins, baseTemperature, monthlyVariance } = this.props;
+    const { xScale, yScale } = scales;
+    const { height, width } = dimensions;
+    const { top, right, bottom, left } = margins;
+    
+    const getColor = temp => {
+      switch (true) {
+        case temp >= 0 &&  temp < 1.5:
+          return '#E0F2F1';
+          break;
+        case temp >= 1.5 && temp < 3:
+          return '#B2DFDB';
+          break;
+        case temp >= 3 && temp < 4.5:
+          return '#80CBC4';
+          break;
+        case temp >= 4.5 && temp < 6:
+          return '#4DB6AC';
+          break;
+        case temp >= 6 && temp < 7.5:
+          return '#26A69A';
+          break;
+        case temp >= 7.5 && temp < 9:
+          return '#009688';
+          break;
+        case temp >= 9 && temp < 10.5:
+          return '#00897B';
+          break;
+        case temp >= 10.5 && temp < 12:
+          return '#00796B';
+          break;
+        case temp >= 12 && temp < 13.5:
+          return '#00695C';
+          break;
+        case temp >= 13.5 && temp < 15:
+          return '#004D40';
+          break;
+        default:
+          return '#A7FFEB';
+      }
+		}
+        
+    const cell = (
+      monthlyVariance.map(d => (
+        <rect
+          className='cell'
+          data-month={d.month - 1}
+          data-year={d.year}
+          data-temp={baseTemperature + d.variance}
+          x={xScale(d.year + .25)}
+          y={yScale(d.month - 1.5)}
+          fill={getColor(baseTemperature + d.variance)}
+          width={Math.round((width - right - left) / ((monthlyVariance.length + 3) / 12))}
+          height={(height - top - bottom) / 12}
+          style={{cursor: 'crosshair'}}
+          onMouseOver={() => this.props.onMouseOverCallback(d)}
+          onMouseOut={() => this.props.onMouseOutCallback()}
+        />
+      ))
+    );
+    
+    return (
+      <g>
+        {cell}
+      </g>
+    );
+  }
+}
+
+class Tooltip extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    const { scales, isHovered, month, year, temperature, abbreviations } = this.props;
+    const { xScale, yScale } = scales;
+    
+    // Not a fix but removes the error (xScale() and yScale() returning 'NaN' on initial load)
+    const isNumber = d => {
+      if(!isNaN(d)){
+        return d;
+      }
+		}
+    
+    return (
+      <g id='tooltip' data-year={year} style={{visibility: isHovered ? 'visible' : 'hidden', fontSize: 14}}>
+        <rect
+          x={isNumber(xScale(year) - 84)}
+          y={isNumber(yScale(month - .25))}
+          rx={4}
+          ry={4}
+          width='96px'
+          height='48px'
+          fill='#263238'
+          opacity='.75'
+        />
+        <text
+          y={isNumber(yScale(month - .25))}
+          fill='#FAFAFA'
+          >
+          <tspan x={isNumber(xScale(year) - 78)} dy={19}>{abbreviations[month - 1]} {year}</tspan>
+          <tspan x={isNumber(xScale(year) - 78)} dy={19}>{temperature} °C</tspan>
+        </text>
+      </g>
+    );
+  }
+}
+
+class TempCells extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  
+  render() {
+    const { scale, temp } = this.props;
+    
+    const getColor = temp => {
+      switch (true) {
+        case temp >= 0 &&  temp < 1.5:
+          return '#E0F2F1';
+          break;
+        case temp >= 1.5 && temp < 3:
+          return '#B2DFDB';
+          break;
+        case temp >= 3 && temp < 4.5:
+          return '#80CBC4';
+          break;
+        case temp >= 4.5 && temp < 6:
+          return '#4DB6AC';
+          break;
+        case temp >= 6 && temp < 7.5:
+          return '#26A69A';
+          break;
+        case temp >= 7.5 && temp < 9:
+          return '#009688';
+          break;
+        case temp >= 9 && temp < 10.5:
+          return '#00897B';
+          break;
+        case temp >= 10.5 && temp < 12:
+          return '#00796B';
+          break;
+        case temp >= 12 && temp < 13.5:
+          return '#00695C';
+          break;
+        case temp >= 13.5 && temp < 15:
+          return '#004D40';
+          break;
+        default:
+          return '#A7FFEB';
+      }
+		}
+        
+    const cell = (
+      temp.map(d => (
+        <rect
+          x={scale(d)}
+          y={6}
+          fill={getColor(d)}
+          width='15px'
+          height='15px'
+        />
+      ))
+    );
+    
+    return (
+      <g>
+        {cell}
+      </g>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HeatMap />,
+  document.getElementById('root')
+);

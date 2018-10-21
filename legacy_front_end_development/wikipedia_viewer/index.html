@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wikipedia Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/font-awesome.min.css" />
+    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/foundation623.min.css" />
+    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/jquery-ui1114.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container moz-container-fix">
+      <div id="row-init" class="row moz-row-fix">
+        <div class="small-12">
+          <div id="wikipedia-init">
+            <div class="init-image"><img src="img/wikipedia_init.png" /></div>
+            <div class="init-search">
+              <div><input id="init-input" type="search" /></div>
+              <div>
+                <button id="init-button-mobile" type="button" class="button search show-for-small-only">
+                  <i class="fa fa-search fa-lg"></i>
+                </button>
+              </div>
+            </div>
+            <div class="init-actions">
+              <button id="init-button" type="button" class="button search show-for-medium">Wikipedia Search</button>
+              <a
+                href="https://en.wikipedia.org/wiki/Special:Random"
+                class="button show-for-medium"
+                target="_blank"
+                rel="noopener noreferrer"
+                >I'm Feeling Lucky</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="wikipedia-top-bar" class="top-bar">
+        <div class="row">
+          <div class="top-bar-title"><img src="img/wikipedia_topbar.png" /></div>
+          <div class="top-bar-left">
+            <div class="top-bar-search">
+              <div><input id="top-bar-input" type="search" /></div>
+              <div>
+                <button id="top-bar-button" type="button" class="button search">
+                  <i class="fa fa-search fa-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12"><div id="wikipedia-results"></div></div>
+      </div>
+    </div>
+    <footer class="text-center">
+      <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer"
+        ><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a
+      >
+    </footer>
+    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery224.min.js"></script>
+    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery-ui1114.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

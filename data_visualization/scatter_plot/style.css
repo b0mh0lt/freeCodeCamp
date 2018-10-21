@@ -1,0 +1,26 @@
+body,
+text {
+  background-color: #f5f5f5;
+  color: #616161;
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+#x-axis path,
+#y-axis path {
+  stroke: transparent;
+}
+#x-axis line,
+#y-axis line {
+  color: #e0e0e0;
+}
+#legend div,
+#legend p {
+  max-width: 210px;
+}
+@media only screen and (min-width: 450px) {
+  #legend div,
+  #legend p {
+    max-width: 420px;
+  }
+}

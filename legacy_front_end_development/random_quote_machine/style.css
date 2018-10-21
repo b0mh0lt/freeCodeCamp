@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500');
+#preload {
+  display: none;
+}
+html,
+body {
+  background-color: #3ba6c7;
+  height: 100%;
+}
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+.container {
+  display: table;
+  height: 100%;
+  margin-bottom: -42px;
+  min-height: 100%;
+  min-width: 100%;
+  table-layout: fixed;
+  width: 100%;
+}
+.container:after {
+  content: '';
+  display: block;
+  height: 42px;
+}
+.row {
+  display: table-cell;
+  padding: 0 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+.card {
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 2px 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 10px auto 52px;
+  max-width: 480px;
+}
+.card .card-image {
+  overflow: hidden;
+  position: relative;
+}
+.card .card-image img {
+  background-clip: padding-box;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+}
+.card .card-image h3 {
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  line-height: 100%;
+  margin: 0;
+  padding: 16px;
+  position: absolute;
+  text-shadow: 0 1px 5px black;
+  text-transform: uppercase;
+}
+.card .card-content {
+  height: 150px;
+  padding: 16px;
+  position: relative;
+}
+.card .card-content #text {
+  color: #212121;
+}
+.card .card-content #episode {
+  bottom: 0;
+  color: #9e9e9e;
+  position: absolute;
+  right: 16px;
+}
+.card .card-actions {
+  background-color: #fff;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  border-radius: 0 0 2px 2px;
+  padding: 16px;
+  line-height: 20px;
+}
+.card .card-actions #quote {
+  background: none;
+  border: none;
+  color: #ed4984;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: transparent;
+}
+.card .card-actions #tweet {
+  color: #9e9e9e;
+  float: right;
+}
+.card .card-actions #tweet:hover {
+  color: #ed4984;
+}
+.card .card-actions #share {
+  color: #9e9e9e;
+  float: right;
+  padding-right: 16px;
+}
+.card .card-actions #share:hover {
+  color: #ed4984;
+  text-decoration: none;
+}
+footer {
+  background-color: #3479a5;
+  bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  height: 42px;
+  width: 100%;
+  text-align: center;
+}
+footer a {
+  color: #ccdee8;
+  line-height: 42px;
+  position: relative;
+  top: 2px;
+}
+footer a:focus {
+  color: #ccdee8;
+}
+footer a:hover {
+  color: #ccdee8;
+}
+footer a:visited {
+  color: #ccdee8;
+}
+footer a .fa-lg {
+  vertical-align: text-top;
+  margin-right: 4px;
+}

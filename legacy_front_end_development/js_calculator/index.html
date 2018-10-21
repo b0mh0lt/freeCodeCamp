@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/font-awesome.min.css" />
+    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/bootstrap337.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="display" class="col-xs-12">
+          <div class="hidden-calculation"><h4>0</h4></div>
+          <div class="latest-calculation"><h3></h3></div>
+          <div class="result">
+            <h1>
+              <span class="equals">= </span> <span class="open-bracket">0</span> <span class="close-bracket"></span>
+            </h1>
+          </div>
+        </div>
+        <div id="keys" class="col-xs-12 col-sm-8">
+          <div class="grey800">
+            <span class="key">7</span> <span class="key">4</span> <span class="key">1</span> <span class="key">.</span>
+          </div>
+          <div class="grey800">
+            <span class="key">8</span> <span class="key">5</span> <span class="key">2</span> <span class="key">0</span>
+          </div>
+          <div class="grey800">
+            <span class="key">9</span> <span class="key">6</span> <span class="key">3</span> <span class="key">=</span>
+          </div>
+          <div class="grey700">
+            <span class="key">DEL</span> <span class="key">÷</span> <span class="key">×</span>
+            <span class="key">-</span> <span class="key">+</span>
+          </div>
+          <div class="yellowA600"></div>
+        </div>
+        <div id="keys-extended" class="hidden-xs col-sm-4">
+          <div>
+            <span class="key">sin</span> <span class="key">ln</span> <span class="key">π</span>
+            <span class="key">(</span>
+          </div>
+          <div>
+            <span class="key">cos</span> <span class="key">log</span> <span class="key">e</span>
+            <span class="key">)</span>
+          </div>
+          <div>
+            <span class="key">tan</span> <span class="key">!</span> <span class="key">^</span>
+            <span class="key">√</span>
+          </div>
+          <div class="bomholt text-center">
+            <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer">
+              <i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

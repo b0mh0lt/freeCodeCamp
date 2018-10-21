@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simon Game</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/normalize500.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="error-audio">
+      <source src="audio/error.mp3" type="audio/mpeg" />
+      <source src="audio/error.ogg" type="audio/ogg" />
+    </audio>
+    <audio id="green-audio">
+      <source src="audio/green.mp3" type="audio/mpeg" />
+      <source src="audio/green.ogg" type="audio/ogg" />
+    </audio>
+    <audio id="red-audio">
+      <source src="audio/red.mp3" type="audio/mpeg" />
+      <source src="audio/red.ogg" type="audio/ogg" />
+    </audio>
+    <audio id="yellow-audio">
+      <source src="audio/yellow.mp3" type="audio/mpeg" />
+      <source src="audio/yellow.ogg" type="audio/ogg" />
+    </audio>
+    <audio id="blue-audio">
+      <source src="audio/blue.mp3" type="audio/mpeg" />
+      <source src="audio/blue.ogg" type="audio/ogg" />
+    </audio>
+    <div class="wrapper">
+      <div class="container">
+        <div class="outer">
+          <div class="row">
+            <span id="green" class="col"></span>
+            <div id="red" class="col"></div>
+          </div>
+          <div class="row">
+            <div id="yellow" class="col"></div>
+            <div id="blue" class="col"></div>
+          </div>
+          <div class="inner"><p class="counter"></p></div>
+        </div>
+        <div class="controls">
+          <a id="start" class="btn">start game</a> <a id="stop" class="btn">stop game</a>
+          <a id="restart" class="btn disabled">restart game</a>
+          <div class="checkbox">
+            <input type="checkbox" id="strict" /> <label for="strict"></label> <span>strict</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer"
+        ><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a
+      >
+    </footer>
+    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery321.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

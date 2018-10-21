@@ -1,0 +1,770 @@
+[
+  {
+    "Year": 1916,
+    "Winner": "Rea Lentz",
+    "Nationality": "US",
+    "Vehicle": "Romano Special",
+    "Time": "20:55.600",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1920,
+    "Winner": "Otto Loesche",
+    "Nationality": "US",
+    "Vehicle": "Lexington Special",
+    "Time": "22:25.400",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1921,
+    "Winner": "King Rhiley",
+    "Nationality": "US",
+    "Vehicle": "Hudson Special",
+    "Time": "19:16.200",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1922,
+    "Winner": "Noel Bullock",
+    "Nationality": "US",
+    "Vehicle": "Ford Special",
+    "Time": "19:50.900",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1923,
+    "Winner": "Glen Shultz",
+    "Nationality": "US",
+    "Vehicle": "Hudson Essex",
+    "Time": "18:47.000",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1924,
+    "Winner": "Otto Loesche",
+    "Nationality": "US",
+    "Vehicle": "Lexington Special",
+    "Time": "18:15.000",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1925,
+    "Winner": "Charles H. Myers",
+    "Nationality": "US",
+    "Vehicle": "Chandler Special",
+    "Time": "17:48.400",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1926,
+    "Winner": "Glen Shultz",
+    "Nationality": "US",
+    "Vehicle": "Stutz",
+    "Time": "18:19.400",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1927,
+    "Winner": "Glen Shultz",
+    "Nationality": "US",
+    "Vehicle": "Stutz",
+    "Time": "18:25.100",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1928,
+    "Winner": "Glen Shultz",
+    "Nationality": "US",
+    "Vehicle": "Stutz Special",
+    "Time": "17:41.600",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1929,
+    "Winner": "Edward Phillips",
+    "Nationality": "US",
+    "Vehicle": "Shultz Stutz 8",
+    "Time": "18:22.800",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1930,
+    "Winner": "Glen Shultz",
+    "Nationality": "US",
+    "Vehicle": "Stutz DV-32",
+    "Time": "18:08.700",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1931,
+    "Winner": "Charles H. Myers",
+    "Nationality": "US",
+    "Vehicle": "Hunt Special",
+    "Time": "17:10.300",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1932,
+    "Winner": "Glen Shultz",
+    "Nationality": "US",
+    "Vehicle": "Shultz/Stutz Special",
+    "Time": "16:47.200",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1933,
+    "Winner": "Glen Shultz",
+    "Nationality": "US",
+    "Vehicle": "Stutz DV-32",
+    "Time": "17:27.500",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1934,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Stutz Special",
+    "Time": "16:01.800",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1935,
+    "Winner": "W.P. Bentrup",
+    "Nationality": "US",
+    "Vehicle": "1935 Chevrolet Truck",
+    "Time": "26:12.000",
+    "Legend": "unofficial"
+  },
+  {
+    "Year": 1936,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Shultz Stutz",
+    "Time": "16:28.100",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1937,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Stutz DV-32",
+    "Time": "16:27.300",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1938,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Loop Cafe Special",
+    "Time": "15:49.900",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1939,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Snowberger Special",
+    "Time": "15:39.400",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1940,
+    "Winner": "Al Rogers",
+    "Nationality": "US",
+    "Vehicle": "Joe Coniff Special",
+    "Time": "15:59.900",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1941,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Burd Special",
+    "Time": "15:35.200",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1946,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Maserati",
+    "Time": "15:28.700",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1947,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Maserati",
+    "Time": "16:34.770",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1948,
+    "Winner": "Al Rogers",
+    "Nationality": "US",
+    "Vehicle": "Coniff Special Offenhauser",
+    "Time": "15:51.300",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1949,
+    "Winner": "Al Rogers",
+    "Nationality": "US",
+    "Vehicle": "Coniff Special",
+    "Time": "15:54.260",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1950,
+    "Winner": "Al Rogers",
+    "Nationality": "US",
+    "Vehicle": "Coniff Special",
+    "Time": "15:39.000",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1951,
+    "Winner": "Al Rogers",
+    "Nationality": "US",
+    "Vehicle": "Offenhauser",
+    "Time": "15:39.700",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1952,
+    "Winner": "George Hammond",
+    "Nationality": "US",
+    "Vehicle": "Kurtis Kraft Offenhauser Special",
+    "Time": "15:30.650",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1953,
+    "Winner": "Louis Unser",
+    "Nationality": "US",
+    "Vehicle": "Federal Engineering Special",
+    "Time": "15:15.400",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1954,
+    "Winner": "Keith Andrews",
+    "Nationality": "US",
+    "Vehicle": "Joe Hunt",
+    "Time": "14:39.700",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1955,
+    "Winner": "Bob Finney",
+    "Nationality": "US",
+    "Vehicle": "Dick Frenzel Special",
+    "Time": "14:27.200",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1956,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Unser Special",
+    "Time": "14:27.000",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1957,
+    "Winner": "Bob Finney",
+    "Nationality": "US",
+    "Vehicle": "Dick Frenzel Special",
+    "Time": "14:11.700",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1958,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Unser Special",
+    "Time": "13:47.900",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1959,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Unser Special",
+    "Time": "13:36.500",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1960,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Unser Special",
+    "Time": "13:28.500",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1961,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Unser Special",
+    "Time": "12:56.700",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1962,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Unser Special",
+    "Time": "12:05.800",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1963,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Chevrolet 327",
+    "Time": "12:30.600",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1964,
+    "Winner": "Al Unser",
+    "Nationality": "US",
+    "Vehicle": "Offenhauser",
+    "Time": "12:24.500",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1965,
+    "Winner": "Al Unser",
+    "Nationality": "US",
+    "Vehicle": "Harrison Ford",
+    "Time": "12:54.300",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1966,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Chevrolet",
+    "Time": "12:23.800",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1967,
+    "Winner": "Wes Vandervoort",
+    "Nationality": "US",
+    "Vehicle": "Chevrolet",
+    "Time": "12:46.300",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1968,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Rislone Special",
+    "Time": "11:54.900",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1969,
+    "Winner": "Mario Andretti",
+    "Nationality": "US",
+    "Vehicle": "Chevrolet STP Special",
+    "Time": "12:44.070",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1970,
+    "Winner": "Ted Foltz",
+    "Nationality": "US",
+    "Vehicle": "Chevrolet 303",
+    "Time": "12:41.100",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1971,
+    "Winner": "Ak Miller",
+    "Nationality": "DK",
+    "Vehicle": "1970 Mustang",
+    "Time": "14:18.600",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1972,
+    "Winner": "Roger Mears",
+    "Nationality": "US",
+    "Vehicle": "Volkswagen 2180",
+    "Time": "13:26.840",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1973,
+    "Winner": "Roger Mears",
+    "Nationality": "US",
+    "Vehicle": "Volkswagen 2180",
+    "Time": "12:54.790",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1974,
+    "Winner": "Errol Kobilan",
+    "Nationality": "US",
+    "Vehicle": "Sprint Chevrolet 302",
+    "Time": "12:54.770",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1975,
+    "Winner": "Orville Nance",
+    "Nationality": "US",
+    "Vehicle": "Chevrolet 327",
+    "Time": "12:36.650",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1976,
+    "Winner": "Rick Mears",
+    "Nationality": "US",
+    "Vehicle": "Porsche 2386",
+    "Time": "12:11.890",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1977,
+    "Winner": "Bob Herring",
+    "Nationality": "US",
+    "Vehicle": "Chevrolet 350",
+    "Time": "12:15.720",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1978,
+    "Winner": "Errol Kobilan",
+    "Nationality": "US",
+    "Vehicle": "Chevrolet",
+    "Time": "11:55.830",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1979,
+    "Winner": "Dick Dodge Jr.",
+    "Nationality": "US",
+    "Vehicle": "Hoffpauir Wells Coyote Chevrolet",
+    "Time": "11:54.180",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1980,
+    "Winner": "Ted Foltz",
+    "Nationality": "US",
+    "Vehicle": "1970 Chevrolet 350",
+    "Time": "12:15.810",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1981,
+    "Winner": "Gary Lee Kanawyer",
+    "Nationality": "US",
+    "Vehicle": "1976 N-D Porsche",
+    "Time": "12:03.960",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1982,
+    "Winner": "Bill Brister",
+    "Nationality": "US",
+    "Vehicle": "Woziwodzki Wells Coyote Chevrolet",
+    "Time": "11:44.820",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1983,
+    "Winner": "Al Unser, Jr.",
+    "Nationality": "US",
+    "Vehicle": "Woziwodzki Wells Coyote Chevy",
+    "Time": "11:38.300",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1984,
+    "Winner": "Bill Brister",
+    "Nationality": "US",
+    "Vehicle": "1981 Wells Coyote",
+    "Time": "11:44.490",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1985,
+    "Winner": "Michèle Mouton",
+    "Nationality": "FR",
+    "Vehicle": "Audi Sport Quattro S1",
+    "Time": "11:25.390",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1986,
+    "Winner": "Bobby Unser",
+    "Nationality": "US",
+    "Vehicle": "Audi Sport Quattro SL",
+    "Time": "11:09.220",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1987,
+    "Winner": "Walter Röhrl",
+    "Nationality": "DE",
+    "Vehicle": "Audi Sport Quattro E2",
+    "Time": "10:47.850",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1988,
+    "Winner": "Ari Vatanen",
+    "Nationality": "FI",
+    "Vehicle": "Peugeot 405 Turbo 16",
+    "Time": "10:47.220",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1989,
+    "Winner": "Robby Unser",
+    "Nationality": "US",
+    "Vehicle": "Peugeot 405 Turbo 16",
+    "Time": "10:48.340",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1990,
+    "Winner": "Robby Unser",
+    "Nationality": "US",
+    "Vehicle": "Unser Chevrolet",
+    "Time": "11:32.860",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1991,
+    "Winner": "David Donner",
+    "Nationality": "US",
+    "Vehicle": "Donner-Dykstra Chevrolet",
+    "Time": "11:12.420",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1992,
+    "Winner": "Robby Unser",
+    "Nationality": "US",
+    "Vehicle": "Unser Chevrolet",
+    "Time": "10:53.870",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1993,
+    "Winner": "Paul Dallenbach",
+    "Nationality": "US",
+    "Vehicle": "Davis Chevrolet",
+    "Time": "10:43.630",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1994,
+    "Winner": "Rod Millen",
+    "Nationality": "NZ",
+    "Vehicle": "Toyota Celica AWD Turbo",
+    "Time": "10:04.060",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1995,
+    "Winner": "Nobuhiro Tajima",
+    "Nationality": "JP",
+    "Vehicle": "Suzuki Grand Vitara",
+    "Time": "7:53.000",
+    "Legend": "short"
+  },
+  {
+    "Year": 1996,
+    "Winner": "Rod Millen",
+    "Nationality": "NZ",
+    "Vehicle": "Toyota Celica",
+    "Time": "10:13.640",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1997,
+    "Winner": "Rod Millen",
+    "Nationality": "NZ",
+    "Vehicle": "Toyota Celica",
+    "Time": "10:04.540",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1998,
+    "Winner": "Rod Millen",
+    "Nationality": "NZ",
+    "Vehicle": "Toyota Celica",
+    "Time": "10:07.700",
+    "Legend": "p0"
+  },
+  {
+    "Year": 1999,
+    "Winner": "Rod Millen",
+    "Nationality": "NZ",
+    "Vehicle": "Toyota Celica",
+    "Time": "10:11.150",
+    "Legend": "p0"
+  },
+  {
+    "Year": 2000,
+    "Winner": "Larry Ragland",
+    "Nationality": "US",
+    "Vehicle": "2000 GMC Envoy",
+    "Time": "11:17.660",
+    "Legend": "p0"
+  },
+  {
+    "Year": 2001,
+    "Winner": "Gary Lee Kanawye",
+    "Nationality": "US",
+    "Vehicle": "1981 Wells Coyote",
+    "Time": "10:39.760",
+    "Legend": "p0"
+  },
+  {
+    "Year": 2002,
+    "Winner": "David Donner",
+    "Nationality": "US",
+    "Vehicle": "1997 Donner Dykstra",
+    "Time": "10:52.300",
+    "Legend": "p6"
+  },
+  {
+    "Year": 2003,
+    "Winner": "Paul Dallenbach",
+    "Nationality": "US",
+    "Vehicle": "2000 PVA-01",
+    "Time": "11:34.700",
+    "Legend": "p6"
+  },
+  {
+    "Year": 2004,
+    "Winner": "Robby Unser",
+    "Nationality": "US",
+    "Vehicle": "Subaru Impreza STIE",
+    "Time": "11:47.280",
+    "Legend": "p21"
+  },
+  {
+    "Year": 2005,
+    "Winner": "David Donner",
+    "Nationality": "US",
+    "Vehicle": "Donner/Dykstra Special",
+    "Time": "11:15.680",
+    "Legend": "p21"
+  },
+  {
+    "Year": 2006,
+    "Winner": "Nobuhiro Tajima",
+    "Nationality": "JP",
+    "Vehicle": "Suzuki Sport",
+    "Time": "7:38.900",
+    "Legend": "short"
+  },
+  {
+    "Year": 2007,
+    "Winner": "Nobuhiro Tajima",
+    "Nationality": "JP",
+    "Vehicle": "Suzuki XL7",
+    "Time": "10:01.408",
+    "Legend": "p46"
+  },
+  {
+    "Year": 2008,
+    "Winner": "Nobuhiro Tajima",
+    "Nationality": "JP",
+    "Vehicle": "Suzuki XL7",
+    "Time": "10:18.250",
+    "Legend": "p46"
+  },
+  {
+    "Year": 2009,
+    "Winner": "Nobuhiro Tajima",
+    "Nationality": "JP",
+    "Vehicle": "Suzuki SX4",
+    "Time": "10:15.368",
+    "Legend": "p46"
+  },
+  {
+    "Year": 2010,
+    "Winner": "Nobuhiro Tajima",
+    "Nationality": "JP",
+    "Vehicle": "Suzuki SX4",
+    "Time": "10:11.490",
+    "Legend": "p57"
+  },
+  {
+    "Year": 2011,
+    "Winner": "Nobuhiro Tajima",
+    "Nationality": "JP",
+    "Vehicle": "Suzuki SX4",
+    "Time": "9:51.278",
+    "Legend": "p76"
+  },
+  {
+    "Year": 2012,
+    "Winner": "Rhys Millen",
+    "Nationality": "NZ",
+    "Vehicle": "Hyundai Genesis Coupe",
+    "Time": "9:46.164",
+    "Legend": "p100"
+  },
+  {
+    "Year": 2013,
+    "Winner": "Sébastien Loeb",
+    "Nationality": "FR",
+    "Vehicle": "Peugeot 208 T16",
+    "Time": "8:13.878",
+    "Legend": "p100"
+  },
+  {
+    "Year": 2014,
+    "Winner": "Romain Dumas",
+    "Nationality": "FR",
+    "Vehicle": "Norma M20 RD",
+    "Time": "9:05.801",
+    "Legend": "p100"
+  },
+  {
+    "Year": 2015,
+    "Winner": "Rhys Millen",
+    "Nationality": "NZ",
+    "Vehicle": "eO PP03",
+    "Time": "9:07.222",
+    "Legend": "p100"
+  },
+  {
+    "Year": 2016,
+    "Winner": "Romain Dumas",
+    "Nationality": "FR",
+    "Vehicle": "Norma M20 RD",
+    "Time": "8:51.445",
+    "Legend": "p100"
+  },
+  {
+    "Year": 2017,
+    "Winner": "Romain Dumas",
+    "Nationality": "FR",
+    "Vehicle": "Norma M20 RD",
+    "Time": "9:05.672",
+    "Legend": "p100"
+  },
+  {
+    "Year": 2018,
+    "Winner": "Romain Dumas",
+    "Nationality": "FR",
+    "Vehicle": "Volkswagen I.D. R",
+    "Time": "7:57.148",
+    "Legend": "p100"
+  }
+]

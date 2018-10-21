@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Twitch Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/font-awesome.min.css" />
+    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/bootstrap337.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container navbar-container">
+        <div class="row">
+          <div class="navbar-header"><img src="img/twitch_navbar.png" /></div>
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li>
+              <a href="https://www.twitch.tv/directory" target="_blank" rel="noopener noreferrer">Browse Twitch</a>
+            </li>
+            <li><div class="navbar-divider"></div></li>
+            <li><a href="https://www.twitch.tv/login" target="_blank" rel="noopener noreferrer">Login</a></li>
+            <li><a href="https://www.twitch.tv/signup" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
+          </ul>
+          <div class="dropdown pull-right hidden-sm hidden-md hidden-lg">
+            <a href="#" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-ellipsis-v"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+              <li>
+                <a href="https://www.twitch.tv/directory" target="_blank" rel="noopener noreferrer">Browse Twitch</a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://www.twitch.tv/login" target="_blank" rel="noopener noreferrer">Login</a></li>
+              <li><a href="https://www.twitch.tv/signup" target="_blank" rel="noopener noreferrer">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="featured">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-8 featured-md-8"><div id="fcc-preview"></div></div>
+          <div class="col-xs-12 col-md-4 featured-md-4">
+            <div class="fcc-info">
+              <div id="fcc-profile"></div>
+              <div id="fcc-bio">
+                <p>
+                  We help you learn to code, then practice by building projects for nonprofits.<br />Learn Full-stack
+                  JavaScript, build a portfolio, and get a coding job by joining our open source community at:<br /><br /><a
+                    href="https://freecodecamp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >https://freecodecamp.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="channels">
+      <div class="container">
+        <div class="row">
+          <div class="live-channels">
+            <div class="col-xs-12"><h2>Live Channels</h2></div>
+          </div>
+          <div class="offline-channels">
+            <div class="col-xs-12"><h2>Offline Channels</h2></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-center">
+        <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer"
+          ><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a
+        >
+      </div>
+    </footer>
+    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery311.min.js"></script>
+    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/bootstrap337.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

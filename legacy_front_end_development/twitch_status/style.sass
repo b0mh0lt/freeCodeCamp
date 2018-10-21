@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:500")
+
+@media (min-width: 1200px)
+  .container
+    width: 970px
+
+.featured-md-8
+  padding: 28px 15px 0 15px
+  @media (min-width: 992px)
+    padding: 28px 0 28px 15px
+
+.featured-md-4
+  padding: 0 15px 28px 15px
+  @media (min-width: 992px)
+    padding: 28px 15px 28px 0
+
+html
+  min-height: 100%
+  position: relative
+
+body
+  font-family: "Open Sans", sans-serif
+  font-weight: 400
+  margin-bottom: 42px
+
+a
+  background: none
+  border: none
+  outline: none
+  -webkit-tap-highlight-color: transparent
+
+a:focus, a:hover, a:visited
+  text-decoration: none
+
+h2
+  color: #433f4a
+  font-size: 26px
+  font-weight: 600
+  @media (min-width: 768px)
+    font-size: 30px
+
+.navbar
+  background-color: #fff
+  border: 0
+  border-radius: 0
+  margin: 0
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.07),0 0 0 1px rgba(0,0,0,0.2)
+
+  .navbar-header
+    display: inline-block
+    padding: 14px 15px
+
+  .navbar-right
+    padding: 5px 15px
+
+    li a
+      color: #6441a4
+      &:hover
+        color: #433f4a
+
+    .navbar-divider
+      display: block
+      border-right: 1px solid rgba(0,0,0,0.2)
+      width: 0
+      height: 20px
+      margin: 15px 1rem
+
+  .dropdown
+    padding: 18px 15px 15px 15px
+
+    .dropdown-menu
+      margin: -50px 10px 0 0
+      border-radius: 3px
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+    .divider
+      margin: 5px 0
+
+    a
+      color: #6441a4
+      padding: 5px 10px
+      &:hover
+        color: #433f4a
+        background-color: #fff
+
+      .fa-ellipsis-v
+        color: #6441a4
+        font-size: 26px
+
+.featured
+  background-color: #17141f
+  background-image: url("img/twitch_backgroundart.jpg")
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  @media (min-width: 1600px)
+    background-size: initial
+
+  a
+    color: #b19dd8
+
+  #fcc-preview
+    margin: 0 auto
+    max-width: 640px
+    position: relative
+
+    .overlay
+      background-color: rgba(23,20,31,0.498039)
+      height: 100%
+      position: absolute
+      top: 0
+      width: 100%
+      text-align: center
+      white-space: nowrap
+      &:before
+        content: ""
+        display: inline-block
+        height: 100%
+        vertical-align: middle
+
+      i
+        color: #f5f5f5
+        font-size: 40px
+        vertical-align: middle
+        &:hover
+          color: #b19dd8
+        @media (min-width: 768px)
+          font-size: 60px
+
+    h5
+      color: #f5f5f5
+      margin: 15px
+      position: absolute
+      right: 0
+      text-transform: uppercase
+      top: 0
+
+      i
+        color: red
+
+  .fcc-info
+    background-color: rgba(23,20,31,0.498039)
+    color: #fff
+    height: auto
+    margin: 0 auto
+    max-width: 640px
+    padding: 15px 15px 0 15px
+    @media (min-width: 992px)
+      height: 355.297px
+      padding: 15px
+
+    #fcc-profile
+      color: #fff
+
+      img
+        float: left
+        height: 40px
+        width: 40px
+        margin-right: 10px
+
+      h4
+        margin-top: 0
+        margin-bottom: 0.25rem
+
+    #fcc-bio
+      color: rgb(164,159,173)
+
+      p
+        margin: 15px 0 0 0
+        @media (min-width: 992px)
+          margin: 28px 0 0 0
+
+.channels
+  padding: 28px 0
+
+.live-channels
+  display: none
+
+.offline-channels
+  display: none
+
+.channel
+  padding: 15px
+
+  img
+    max-width: 640px
+    width: 100%
+    margin: 0 auto
+
+  .channel-info
+    max-width: 640px
+    width: 100%
+    margin: 0 auto
+
+    h4
+      color: #433f4a
+      margin: 10px 0 5px 0
+
+    h5
+      color: #706a7c
+      margin: 5px 0 10px 0
+
+footer
+  background-color: #19171c
+  bottom: 0
+  font-family: "Roboto", sans-serif
+  font-weight: 500
+  height: 42px
+  position: absolute
+  width: 100%
+
+  a
+    color: #c5c0cb
+    line-height: 42px
+    position: relative
+    top: 2px
+    &:hover, &:focus
+      color: #c5c0cb
+      text-decoration: none
+
+    .fa-lg
+      vertical-align: text-top
+      margin-right: 4px

@@ -1,0 +1,163 @@
+$secondary: #607D8B
+
+body
+  font-family: "Roboto", sans-serif
+  font-size: 14.5px
+  font-weight: 400
+  line-height: 20px
+
+.input-field input[type=text]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=email]:focus + label
+  color: $secondary
+
+.input-field input[type=text]:focus, .input-field input[type=number]:focus, input[type=number]:focus.valid, .input-field input[type=email]:focus, input[type=email]:focus.valid, .input-field textarea[class=materialize-textarea]:focus
+  border-bottom: 1px solid $secondary
+  box-shadow: 0 1px 0 0 $secondary
+
+input[type=number].valid, input[type=email].valid
+  border-bottom: 1px solid #9E9E9E
+  box-shadow: none
+
+.dropdown-content li > span
+  color: $secondary
+
+.select-dropdown
+  color: rgba(0,0,0,0.87)
+
+select
+  top: 30px
+  left: 50%
+  z-index: -1
+
+.select-wrapper + label
+  position: absolute
+  top: -1.2rem
+
+#no-label:after
+  top: 32px
+
+[type="radio"]:checked + label:after
+  border: 2px solid $secondary
+  background-color: $secondary
+
+[type="checkbox"].filled-in:checked+label:before
+  top: 2px
+  margin: 2px
+
+[type="checkbox"].filled-in:checked+label:after
+  border: 2px solid $secondary
+  background-color: $secondary
+  margin: 2px
+
+[type="checkbox"].filled-in:not(:checked)+label:after
+  margin: 2px
+
+.ribbon
+  background-color: #3F51B5
+  flex-shrink: 0
+  height: 42vh
+  width: 100%
+
+main
+  margin-top: -35vh
+  flex-shrink: 0
+
+  .card-container
+    margin: 0 auto
+    max-width: 1400px
+    width: calc(100% - 16px)
+
+    .card-content
+      border-radius: 2px
+      padding: 60px
+      margin-bottom: 80px
+      background-color: #fff
+      @media (max-width: 700px)
+        padding: 40px
+      @media (max-width: 650px)
+        padding: 30px
+      @media (max-width: 600px)
+        padding: 20px
+
+      form
+
+        #title
+          font-size: 1.75rem
+          margin: 1.5rem 0 0 0.75rem
+
+        #description
+          font-size: 13px
+          margin-left: 0.75rem
+          margin-top: 0.25rem
+          padding-bottom: 1rem
+
+        h5
+          color: #FF4081
+          font-size: 1.2rem
+          margin: 1.5rem 0.75rem 0 0.75rem
+          border-bottom: 2px solid #FF4081
+
+        .heading1
+          margin-bottom: 2.25rem
+
+        .heading-after
+          margin-bottom: 1.25rem
+
+        #questions
+
+          div
+            margin: 2px 0
+
+          .input-field-other
+            margin: 0
+
+          .input-field-number, .input-field-number, .input-field-textarea
+            margin: 0 0 0 4px
+
+        #agreement
+
+          a
+            color: $secondary
+            text-decoration: underline
+        p
+          margin-top: 1.25rem
+          margin-bottom: 0.25rem
+
+        .paragraph1
+          margin-top: 2.25rem
+
+        .paragraph-after
+          margin-top: 1.75rem
+
+        .other
+          height: 25px
+
+        .number
+          height: 25px
+          margin-bottom: 0
+
+        #textarea
+          padding: 2px 0 2px 0
+
+        #submit
+          background-color: $secondary
+          margin-top: 2rem
+
+footer
+  height: 60px
+  color: #D0D0D0
+  background-color: #424242
+  font-weight: 500
+  width: 100%
+  text-align: center
+
+  a
+    color: #D0D0D0
+    line-height: 60px
+    position: relative
+    top: 2px
+    &:focus, &:hover, &:visited
+      color: #D0D0D0
+
+    .fa-lg
+      vertical-align: text-top
+      margin-right: 4px

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:600|Roboto:400,500")
+
+html
+  min-height: 100%
+  position: relative
+
+body
+  background-color: #78909C
+  margin-bottom: 42px
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+
+.container
+  position: relative
+  padding-right: 10px
+  padding-left: 10px
+  padding-top: calc(50vh - 250px)
+  min-height: 500px
+  height: 100%
+  @media (min-width:768px)
+    min-height: 650px
+    padding-top: calc(50vh - 325px)
+
+  .grid
+    background-color: transparent
+    width: 300px
+    height: 300px
+    margin: 40px auto
+    @media (min-width:768px)
+      width: 450px
+      height: 450px
+      margin: 50px auto
+
+    .field
+      cursor: pointer
+      width: 100px
+      height: 100px
+      display: block
+      font-family: "Raleway", sans-serif
+      font-size: 40px
+      font-weight: 600
+      float: left
+      text-align: center
+      line-height: 100px
+      @media (min-width:768px)
+        width: 150px
+        height: 150px
+        font-size: 60px
+        line-height: 150px
+
+    .top
+      border-bottom: 3px solid #455A64
+      @media (min-width:768px)
+        border-bottom: 4px solid #455A64
+
+    .right
+      border-left: 3px solid #455A64
+      @media (min-width:768px)
+        border-left: 4px solid #455A64
+
+    .bottom
+      border-top: 3px solid #455A64
+      @media (min-width:768px)
+        border-top: 4px solid #455A64
+
+    .left
+      border-right: 3px solid #455A64
+      @media (min-width:768px)
+        border-right: 4px solid #455A64
+
+    .horizontal
+      border-top: 3px solid #455A64
+      border-bottom: 3px solid #455A64
+      @media (min-width:768px)
+        border-top: 4px solid #455A64
+        border-bottom: 4px solid #455A64
+
+    .vertical
+      border-right: 3px solid #455A64
+      border-left: 3px solid #455A64
+      @media (min-width:768px)
+        border-right: 4px solid #455A64
+        border-left: 4px solid #455A64
+
+  .controls
+    width: 200px
+    margin: 0 auto
+    @media (min-width:768px)
+      width: 240px
+
+    .radio
+      height: 14px
+      margin: 10px 0
+      display: block
+      float: left
+      width: 100px
+      @media (min-width:768px)
+        height: 16px
+        width: 120px
+
+      input
+        display: none
+
+      label
+        cursor: pointer
+        position: absolute
+        width: 14px
+        height: 14px
+        min-height: 14px
+        padding-left: 0
+        top: 0
+        left: 18px
+        background: #ECEFF1
+        border: 2px solid #263238
+        border-radius: 50%
+        &:after
+          opacity: 0
+          content: ""
+          position: absolute
+          background: transparent
+        @media (min-width:768px)
+          width: 16px
+          height: 16px
+          min-height: 16px
+
+      [type=radio]:checked + label
+        background-color: #69F0AE
+        border: 2px solid #69F0AE
+
+      [type=radio]:checked + label:after
+        opacity: 1
+
+      span
+        color: #212121
+        font-size: 14px
+        line-height: 14px
+        position: absolute
+        top: 0
+        left: 39px
+        @media (min-width:768px)
+          font-size: 16px
+          line-height: 16px
+          left: 42px
+
+footer
+  position: absolute
+  background-color: #607D8B
+  bottom: 0
+  font-family: "Roboto", sans-serif
+  height: 42px
+  width: 100%
+  text-align: center
+
+  a
+    color: #D6DFE3
+    line-height: 40px
+    position: relative
+    top: 2px
+    text-decoration: none
+    &:focus, &:hover, &:visited
+      color: #D6DFE3
+
+    .fa-lg
+      vertical-align: text-top
+      margin-right: 4px

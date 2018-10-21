@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:500&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+html,
+body {
+  background-color: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+.moz-container-fix {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.container {
+  display: table;
+  height: 100%;
+  margin-bottom: -42px;
+  min-height: 100%;
+  min-width: 100%;
+}
+.container:after {
+  content: '';
+  display: block;
+  height: 42px;
+}
+a {
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+[type='search']:focus {
+  border: 1px solid #ff4081;
+  box-shadow: 0 0 5px #ff4081;
+}
+.moz-row-fix {
+  height: 100%;
+  width: 100%;
+}
+#row-init {
+  display: table-cell;
+  vertical-align: middle;
+}
+#row-init #wikipedia-init {
+  margin: 10px auto 52px;
+  max-width: 480px;
+  text-align: center;
+}
+#row-init #wikipedia-init .init-search {
+  display: table;
+  margin-bottom: 6rem;
+  padding: 24px 16px 47px;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  #row-init #wikipedia-init .init-search {
+    margin-bottom: 1rem;
+    padding: 24px 16px;
+  }
+}
+#row-init #wikipedia-init .init-search div {
+  display: table-cell;
+  width: 100%;
+}
+#row-init #wikipedia-init .init-search div #init-input {
+  padding: 8px 50px 8px 8px;
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline;
+}
+@media (min-width: 640px) {
+  #row-init #wikipedia-init .init-search div #init-input {
+    padding: 8px;
+  }
+}
+#row-init #wikipedia-init .init-search div #init-button-mobile {
+  background-color: #ff4081;
+  display: inline-block;
+  margin: 0 0 0 -41px;
+  padding: 10px;
+  height: 2.4375rem;
+  width: 42px;
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline;
+}
+#row-init #wikipedia-init .init-actions .button {
+  background-color: #607d8b;
+  border: 0;
+  margin: 2px 4px 23px;
+  padding: 13px 16px;
+  font-weight: 600;
+}
+#wikipedia-top-bar {
+  background-color: #607d8b;
+  display: none;
+  padding: 0;
+  position: relative;
+}
+#wikipedia-top-bar .top-bar-title {
+  float: none;
+  margin: 0;
+}
+@media (min-width: 640px) {
+  #wikipedia-top-bar .top-bar-title {
+    float: left;
+  }
+}
+#wikipedia-top-bar .top-bar-title img {
+  display: block;
+  margin: 6px auto 2px;
+  padding: 0;
+}
+@media (min-width: 640px) {
+  #wikipedia-top-bar .top-bar-title img {
+    height: 52px;
+    margin: 4px 4px 4px 8px;
+    width: 57px;
+  }
+}
+#wikipedia-top-bar .top-bar-left {
+  padding: 8px;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  #wikipedia-top-bar .top-bar-left {
+    max-width: 480px;
+    padding: 10px 8px;
+  }
+}
+#wikipedia-top-bar .top-bar-left .top-bar-search {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 640px) {
+  #wikipedia-top-bar .top-bar-left .top-bar-search {
+    max-width: 480px;
+  }
+}
+#wikipedia-top-bar .top-bar-left .top-bar-search div {
+  display: table-cell;
+  height: 2.4375rem;
+}
+#wikipedia-top-bar .top-bar-left .top-bar-search div #top-bar-input {
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline;
+}
+#wikipedia-top-bar .top-bar-left .top-bar-search div #top-bar-button {
+  background-color: #ff4081;
+  display: inline-block;
+  margin: 0 0 0 -41px;
+  padding: 10px;
+  position: relative;
+  height: 2.4375rem;
+  vertical-align: middle;
+  vertical-align: -moz-middle-with-baseline;
+  width: 42px;
+}
+.ui-autocomplete {
+  max-width: 605px;
+  margin: 0 8px;
+}
+@media (min-width: 640px) {
+  .ui-autocomplete {
+    max-width: 463px;
+  }
+}
+.ui-menu .ui-menu-item {
+  background: #fefefe;
+  color: #0a0a0a;
+  font-family: inherit;
+  font-size: 1rem;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 1px solid #cfd8dc;
+  background: #cfd8dc;
+  color: #0a0a0a;
+  font-weight: 400;
+}
+#wikipedia-results {
+  display: none;
+}
+#wikipedia-results .no-match {
+  margin: 32px 16px;
+}
+@media (min-width: 640px) {
+  #wikipedia-results .no-match {
+    margin: 32px 16px 32px 77px;
+  }
+}
+#wikipedia-results .no-match p a {
+  color: #ff80ab;
+}
+#wikipedia-results .no-match p a:hover {
+  text-decoration: underline;
+}
+#wikipedia-results .card {
+  background: #fff;
+  background-clip: padding-box;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  display: block;
+  margin: 16px 0;
+  max-width: 720px;
+}
+@media (min-width: 640px) {
+  #wikipedia-results .card {
+    margin: 16px 16px 16px 77px;
+  }
+}
+#wikipedia-results .card .card-content {
+  padding: 16px;
+}
+#wikipedia-results .card .card-content h4 {
+  color: #263238;
+  font-size: 1.25rem;
+}
+@media (min-width: 640px) {
+  #wikipedia-results .card .card-content h4 {
+    font-size: 1.5rem;
+  }
+}
+#wikipedia-results .card .card-content p {
+  margin: 0;
+}
+#wikipedia-results .card .card-link {
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 16px;
+  text-transform: uppercase;
+}
+#wikipedia-results .card .card-link a {
+  color: #ff80ab;
+  padding-right: 16px;
+}
+footer {
+  background-color: #eee;
+  bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  height: 42px;
+  width: 100%;
+}
+footer a {
+  color: #b3b3b3;
+  line-height: 42px;
+  position: relative;
+  top: 2px;
+}
+footer a:focus,
+footer a:hover,
+footer a:visited {
+  color: #b3b3b3;
+}
+footer a .fa-lg {
+  vertical-align: text-top;
+  margin-right: 4px;
+}
