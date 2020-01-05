@@ -1,66 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Random Quote Machine</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/font-awesome.min.css" />
-    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/foundation623.min.css" />
-    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/motion-ui122.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../_assets/css/foundation661.min.css" />
+    <link rel="stylesheet" href="../../_assets/css/motion-ui203.min.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="small-12">
-          <div class="card">
-            <div class="card-image slow">
-              <img id="image" />
-              <h3 id="author"></h3>
-            </div>
-            <div class="card-content">
-              <h5 id="text"></h5>
-              <small> <p id="episode"></p> </small>
-            </div>
-            <div class="card-actions">
-              <button id="quote">new quote</button>
-              <a id="tweet" href="#" target="_blank" rel="noopener noreferrer"> <i class="fa fa-twitter fa-lg"></i> </a>
-              <a id="share" href="#" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-facebook-official fa-lg"></i>
-              </a>
+    <main>
+      <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell flex-container align-center align-middle">
+            <div id="quote-box" class="card">
+              <div class="card-image slow">
+                <img id="image" />
+                <h3 id="author"></h3>
+              </div>
+              <div class="card-section">
+                <h5 id="text"></h5>
+                <small>
+                  <span id="episode"></span>
+                </small>
+              </div>
+              <div class="card-actions">
+                <button id="new-quote">new quote</button>
+                <div class="icons">
+                  <a id="share-quote" href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-square fa-lg"></i>
+                  </a>
+                  <a id="tweet-quote" href="#" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter fa-lg"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer class="text-center">
-      <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer"
-        ><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a
+    </main>
+    <footer>
+      <a href="https://github.com/b0mh0lt" target="_blank" rel="noopener noreferrer"
+        ><i class="fab fa-github-alt fa-lg"></i> M. Bomholt</a
       >
     </footer>
     <div id="preload">
-      <img src="img/711_clerk.jpg" width="1" height="1" /> <img src="img/bender(1).jpg" width="1" height="1" />
-      <img src="img/bender(2).jpg" width="1" height="1" /> <img src="img/bender(3).jpg" width="1" height="1" />
-      <img src="img/bender(4).jpg" width="1" height="1" /> <img src="img/bender(5).jpg" width="1" height="1" />
-      <img src="img/hermes_conrad.jpg" width="1" height="1" />
-      <img src="img/hubert_j_farnsworth(1).jpg" width="1" height="1" />
-      <img src="img/hubert_j_farnsworth(2).jpg" width="1" height="1" />
-      <img src="img/hubert_j_farnsworth(3).jpg" width="1" height="1" />
-      <img src="img/john_a_zoidberg.jpg" width="1" height="1" /> <img src="img/lrrr.jpg" width="1" height="1" />
-      <img src="img/phillip_j_fry(1).jpg" width="1" height="1" />
-      <img src="img/phillip_j_fry(2).jpg" width="1" height="1" />
-      <img src="img/phillip_j_fry(3).jpg" width="1" height="1" />
-      <img src="img/phillip_j_fry(4).jpg" width="1" height="1" />
-      <img src="img/phillip_j_fry(5).jpg" width="1" height="1" />
-      <img src="img/turanga_leela(1).jpg" width="1" height="1" />
-      <img src="img/turanga_leela(2).jpg" width="1" height="1" />
-      <img src="img/turanga_leela(3).jpg" width="1" height="1" />
-      <img src="img/zapp_brannigan(1).jpg" width="1" height="1" />
-      <img src="img/zapp_brannigan(2).jpg" width="1" height="1" />
-      <img src="img/zapp_brannigan(3).jpg" width="1" height="1" />
+      <img src="./img/711_clerk.jpg" alt="7¹¹ Clerk" width="1" height="1" />
+      <img src="./img/bender(1).jpg" alt="Bender" width="1" height="1" />
+      <img src="./img/bender(2).jpg" alt="Bender" width="1" height="1" />
+      <img src="./img/bender(3).jpg" alt="Bender" width="1" height="1" />
+      <img src="./img/bender(4).jpg" alt="Bender" width="1" height="1" />
+      <img src="./img/bender(5).jpg" alt="Bender" width="1" height="1" />
+      <img src="./img/hermes_conrad.jpg" alt="Hermes Conrad" width="1" height="1" />
+      <img src="./img/hubert_j_farnsworth(1).jpg" alt="Hubert J. Farnsworth" width="1" height="1" />
+      <img src="./img/hubert_j_farnsworth(2).jpg" alt="Hubert J. Farnsworth" width="1" height="1" />
+      <img src="./img/hubert_j_farnsworth(3).jpg" alt="Hubert J. Farnsworth" width="1" height="1" />
+      <img src="./img/john_a_zoidberg.jpg" alt="John A. Zoidberg" width="1" height="1" />
+      <img src="./img/lrrr.jpg" alt="Lrrr" width="1" height="1" />
+      <img src="./img/phillip_j_fry(1).jpg" alt="Phillip J. Fry" width="1" height="1" />
+      <img src="./img/phillip_j_fry(2).jpg" alt="Phillip J. Fry" width="1" height="1" />
+      <img src="./img/phillip_j_fry(3).jpg" alt="Phillip J. Fry" width="1" height="1" />
+      <img src="./img/phillip_j_fry(4).jpg" alt="Phillip J. Fry" width="1" height="1" />
+      <img src="./img/phillip_j_fry(5).jpg" alt="Phillip J. Fry" width="1" height="1" />
+      <img src="./img/turanga_leela(1).jpg" alt="Turanga Leela" width="1" height="1" />
+      <img src="./img/turanga_leela(2).jpg" alt="Turanga Leela" width="1" height="1" />
+      <img src="./img/turanga_leela(3).jpg" alt="Turanga Leela" width="1" height="1" />
+      <img src="./img/zapp_brannigan(1).jpg" alt="Zapp Brannigan" width="1" height="1" />
+      <img src="./img/zapp_brannigan(2).jpg" alt="Zapp Brannigan" width="1" height="1" />
+      <img src="./img/zapp_brannigan(3).jpg" alt="Zapp Brannigan" width="1" height="1" />
     </div>
-    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery311.min.js"></script>
-    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/motion-ui122.min.js"></script>
-    <script src="index.js"></script>
+    <script src="../../_assets/js/jquery341.min.js"></script>
+    <script src="../../_assets/js/motion-ui203.min.js"></script>
+    <script src="../../_assets/js/foundation661.min.js"></script>
+    <script src="../../_assets/js/brands.min.js"></script>
+    <script src="../../_assets/js/fontawesome.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
