@@ -1,10 +1,10 @@
 body,
 text {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
-  background-color: #cfd8dc;
-  color: #37474f;
+  background-color: #90a4ae;
+  color: #263238;
 }
 #x-axis text {
   -webkit-transform: rotate(-90deg);
@@ -18,16 +18,20 @@ text {
   display: none;
 }
 #title {
-  margin: 1em 0 0.5em 0;
+  margin: 1rem 0 0.5rem 0;
 }
 #description {
-  margin: 0 0 1.5em 0;
+  margin: 0 0 1.5rem 0;
 }
 @media only screen and (min-width: 992px) {
   #title {
-    margin: 2em 0 0.5em 0;
+    margin: 2rem 0 0.5rem 0;
   }
   #description {
-    margin: 0 0 2.5em 0;
+    margin: 0 0 2.5rem 0;
   }
+}
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
