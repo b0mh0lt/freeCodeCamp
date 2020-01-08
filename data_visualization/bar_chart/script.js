@@ -124,7 +124,7 @@ class BarChart extends React.Component {
               href: 'https://github.com/b0mh0lt',
               target: '_blank',
               rel: 'noopener noreferrer',
-              style: { color: '#424242', textDecoration: 'none', fontWeight: 700, fontSize: '.875rem' }
+              style: { color: '#424242', textDecoration: 'none', fontSize: '.875rem' }
             },
             React.createElement('i', {
               className: 'fab fa-github-alt fa-lg',
