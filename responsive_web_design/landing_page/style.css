@@ -60,7 +60,7 @@ hr {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url(img/8bit.jpg) no-repeat center center #151e28;
+  background: url(./img/8bit.jpg) no-repeat center center #151e28;
   background-size: cover !important;
 }
 @media screen and (min-width: 992px) {
@@ -163,6 +163,7 @@ hr {
   align-items: center;
 }
 #header .video-container iframe {
+  border: 0;
   pointer-events: none;
 }
 #header .text-container {
@@ -383,24 +384,26 @@ footer #form .submit {
   vertical-align: -moz-middle-with-baseline;
   cursor: pointer;
 }
-footer .bomholtm {
+footer .bomholt {
   height: 42px;
   background-color: #111820;
   font-weight: 700;
   width: 100%;
   text-align: center;
 }
-footer .bomholtm a {
+footer .bomholt a {
   color: #41464d;
-  font-size: 15px;
+  font-size: 0.875rem;
   line-height: 42px;
+  position: relative;
+  top: 2px;
 }
-footer .bomholtm a:focus,
-footer .bomholtm a:hover,
-footer .bomholtm a:visited {
-  color: #41464d;
-  text-decoration: none;
+footer .bomholt a:focus,
+footer .bomholt a:hover,
+footer .bomholt a:visited {
+  color: #585d62;
 }
-footer .bomholtm a .fa-github-alt {
-  margin-right: 0.25rem;
+footer .bomholt a svg {
+  margin-right: 0.3125rem;
+  vertical-align: text-bottom !important;
 }
