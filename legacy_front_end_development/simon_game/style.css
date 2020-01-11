@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 ::-moz-selection {
   background: transparent;
 }
@@ -127,7 +126,7 @@ body {
 .wrapper .container .outer .inner .counter {
   display: none;
   color: #212121;
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 0;
   text-align: center;
   vertical-align: middle;
@@ -149,7 +148,7 @@ body {
   color: #212121;
   cursor: pointer;
   background-color: #e0e0e0;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
   letter-spacing: 0.5px;
   border: none;
@@ -209,7 +208,7 @@ body {
 }
 .wrapper .container .controls .checkbox span {
   color: #212121;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
   position: absolute;
   top: 0;
@@ -226,6 +225,7 @@ footer {
 }
 footer a {
   color: #a8a8a8;
+  font-size: 0.875rem;
   line-height: 42px;
   position: relative;
   top: 2px;
@@ -236,7 +236,7 @@ footer a:hover,
 footer a:visited {
   color: #a8a8a8;
 }
-footer a .fa-lg {
-  vertical-align: text-top;
-  margin-right: 4px;
+footer a svg {
+  margin-right: 0.3125rem;
+  vertical-align: text-bottom !important;
 }
