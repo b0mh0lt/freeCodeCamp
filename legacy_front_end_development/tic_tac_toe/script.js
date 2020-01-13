@@ -1,8 +1,8 @@
 $(document).ready(function() {
   var player = 'X';
-  var playerColor = '#ECEFF1';
+  var playerColor = '#545454';
   var computer = 'O';
-  var computerColor = '#263238';
+  var computerColor = '#F1EBD3';
   var turn = true;
   var board = [null, null, null, null, null, null, null, null, null];
   var count = 0;
@@ -257,7 +257,7 @@ $(document).ready(function() {
       turn = false;
       $('.field').css('cursor', 'default');
       setTimeout(function() {
-        alert("'" + current + "' WON!");
+        alert('"' + current + '" WON!');
         reset();
       }, 500);
     } else if (!turn && count < 9) {
@@ -277,16 +277,16 @@ $(document).ready(function() {
   $('.play').change(function() {
     if ($('#playx').is(':checked')) {
       player = 'X';
-      playerColor = '#ECEFF1';
+      playerColor = '#545454';
       computer = 'O';
-      computerColor = '#263238';
+      computerColor = '#F1EBD3';
       reset();
     }
     if ($('#playo').is(':checked')) {
       player = 'O';
-      playerColor = '#263238';
+      playerColor = '#F1EBD3';
       computer = 'X';
-      computerColor = '#ECEFF1';
+      computerColor = '#545454';
       reset();
     }
   });

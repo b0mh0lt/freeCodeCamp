@@ -1,43 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Tic Tac Toe</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/font-awesome.min.css" />
-    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/bootstrap337.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../_assets/css/bootstrap441.min.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="grid">
-        <div id="0" class="field left top"></div>
-        <div id="1" class="field top vertical"></div>
-        <div id="2" class="field right top"></div>
-        <div id="3" class="field left horizontal"></div>
-        <div id="4" class="field horizontal vertical"></div>
-        <div id="5" class="field right horizontal"></div>
-        <div id="6" class="field left bottom"></div>
-        <div id="7" class="field bottom vertical"></div>
-        <div id="8" class="field right bottom"></div>
-      </div>
-      <div class="controls">
-        <div class="radio">
-          <input type="radio" id="playx" class="play" name="play" checked /> <label for="playx"></label>
-          <span>Play "X"</span>
+    <main class="d-flex align-items-center">
+      <div class="container">
+        <div class="grid">
+          <div id="0" class="field left top"></div>
+          <div id="1" class="field top vertical"></div>
+          <div id="2" class="field right top"></div>
+          <div id="3" class="field left horizontal"></div>
+          <div id="4" class="field horizontal vertical"></div>
+          <div id="5" class="field right horizontal"></div>
+          <div id="6" class="field left bottom"></div>
+          <div id="7" class="field bottom vertical"></div>
+          <div id="8" class="field right bottom"></div>
         </div>
-        <div class="radio">
-          <input type="radio" id="playo" class="play" name="play" /> <label for="playo"></label> <span>Play "O"</span>
+        <div class="controls text-center">
+          <div class="radio">
+            <input type="radio" id="playx" class="play" name="play" checked />
+            <label for="playx"></label>
+            <span>Play "X"</span>
+          </div>
+          <div class="radio">
+            <input type="radio" id="playo" class="play" name="play" />
+            <label for="playo"></label>
+            <span>Play "O"</span>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <footer>
-      <a href="https://github.com/bomholtm/fcc" target="_blank" rel="noopener noreferrer"
-        ><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a
+      <a href="https://github.com/b0mh0lt" target="_blank" rel="noopener noreferrer"
+        ><i class="fab fa-github-alt fa-lg"></i> M. Bomholt</a
       >
     </footer>
-    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery311.min.js"></script>
-    <script src="index.js"></script>
+    <script src="../../_assets/js/jquery341.min.js"></script>
+    <script src="../../_assets/js/brands.min.js"></script>
+    <script src="../../_assets/js/fontawesome.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
