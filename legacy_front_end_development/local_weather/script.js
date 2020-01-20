@@ -1,21 +1,24 @@
 $(document).ready(function() {
   var lat, lon;
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPositionHTML, showPositionIP);
+  }
   $('#unit2').on('click', function() {
     var temp = $('#temperature').text();
-    if ($('#unit2').text() == '/ °F') {
+    if ($('#unit2').text() == '°F') {
       $('#temperature').html(Math.round((temp * 9) / 5 + 32));
       $('#unit1').html('°F');
-      $('#unit2').html('/ °C');
+      $('#unit2').html('°C');
       for (i = 0; i <= 7; i++) {
         var tempMax = $('#tempMax-day-' + i).text();
         var tempMin = $('#tempMin-day-' + i).text();
         $('#tempMax-day-' + i).html(Math.round((tempMax * 9) / 5 + 32));
         $('#tempMin-day-' + i).html(Math.round((tempMin * 9) / 5 + 32));
       }
-    } else if ($('#unit2').text() == '/ °C') {
+    } else if ($('#unit2').text() == '°C') {
       $('#temperature').html(Math.round(((temp - 32) * 5) / 9));
       $('#unit1').html('°C');
-      $('#unit2').html('/ °F');
+      $('#unit2').html('°F');
       for (i = 0; i <= 7; i++) {
         var tempMax = $('#tempMax-day-' + i).text();
         var tempMin = $('#tempMin-day-' + i).text();
@@ -24,61 +27,59 @@ $(document).ready(function() {
       }
     }
   });
-  $('#carousel').owlCarousel({
-    items: 5,
-    itemsCustom: false,
-    itemsDesktop: false,
-    itemsDesktopSmall: false,
-    itemsTablet: false,
-    itemsTabletSmall: false,
-    itemsMobile: [420, 4],
-    singleItem: false,
-    itemsScaleUp: false,
-    slideSpeed: 200,
-    autoPlay: false,
-    navigation: false,
-    pagination: false,
-    responsive: true,
-    responsiveRefreshRate: 200,
-    responsiveBaseWidth: window,
-    lazyLoad: false,
-    autoHeight: false,
-    jsonPath: false,
-    jsonSuccess: false,
-    dragBeforeAnimFinish: true,
-    mouseDrag: true,
-    touchDrag: true,
-    transitionStyle: false,
-    addClassActive: false
+  $('#carousel').slick({
+    arrows: false,
+    infinite: false,
+    slidesToShow: 8,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 7
+        }
+      },
+      {
+        breakpoint: 510,
+        settings: {
+          slidesToShow: 6
+        }
+      },
+      {
+        breakpoint: 438,
+        settings: {
+          slidesToShow: 5
+        }
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 4
+        }
+      }
+    ]
   });
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPositionHTML, showPositionIP);
-  }
   function showPositionHTML(position) {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
     showForecast();
   }
   function showPositionIP() {
-    $.getJSON('https://geoip-db.com/json/', function(data) {
-      lat = data.latitude;
-      lon = data.longitude;
+    $.getJSON('https://ipinfo.io?token=2d6b2f67a491b5', function(data) {
+      var loc = data.loc.split(',');
+      lat = loc[0];
+      lon = loc[1];
       showForecast();
     });
   }
   function showForecast(position) {
     $.getJSON(
-      'https://maps.googleapis.com/maps/api/geocode/json?latlng=' +
-        lat +
-        ',' +
-        lon +
-        '&key=AIzaSyAXMXZFmmULPAuW-zEBPZLGebg3RAdft-I',
+      'https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=' + lat + '&lon=' + lon + '&zoom=10',
       function(data) {
-        showLocation(data.results[0]);
+        $('#location').html(data.name);
       }
     );
     $.getJSON(
-      'https://api.darksky.net/forecast/74065424d2567989648101b3cd548674/' + lat + ',' + lon + '?units=auto&callback=?',
+      'https://api.darksky.net/forecast/5f2d44b65720731062108b79b32b6063/' + lat + ',' + lon + '?units=auto&callback=?',
       function(data) {
         showTime(data.currently.time);
         $('#summary').html(data.currently.summary);
@@ -91,13 +92,6 @@ $(document).ready(function() {
         showDayByDayForecast(data.daily);
       }
     );
-  }
-  function showLocation(location) {
-    for (i = 0; i < location.address_components.length; i++) {
-      if (location.address_components[i].types[0] == 'locality') {
-        $('#location').html(location.address_components[i].long_name);
-      }
-    }
   }
   function showTime(time) {
     var dayArr = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -121,10 +115,10 @@ $(document).ready(function() {
   function showUnits(unit) {
     if (unit == 'us') {
       $('#unit1').html('°F');
-      $('#unit2').html('/ °C');
+      $('#unit2').html('°C');
     } else {
       $('#unit1').html('°C');
-      $('#unit2').html('/ °F');
+      $('#unit2').html('°F');
     }
   }
   function showWindSpeed(units, windSpeed) {
@@ -146,43 +140,43 @@ $(document).ready(function() {
   function showBackground(icon) {
     switch (icon) {
       case 'clear-day':
-        $('.card-current').css('background-color', '#4caf50');
+        $('.card-header').css('background-color', '#4caf50');
         break;
       case 'clear-night':
-        $('.card-current').css('background-color', '#3f51b5');
+        $('.card-header').css('background-color', '#3f51b5');
         break;
       case 'rain':
-        $('.card-current').css('background-color', '#2196f3');
+        $('.card-header').css('background-color', '#2196f3');
         break;
       case 'snow':
-        $('.card-current').css('background-color', '#2196f3');
+        $('.card-header').css('background-color', '#2196f3');
         break;
       case 'sleet':
-        $('.card-current').css('background-color', '#2196f3');
+        $('.card-header').css('background-color', '#2196f3');
         break;
       case 'wind':
-        $('.card-current').css('background-color', '#ff9800');
+        $('.card-header').css('background-color', '#ff9800');
         break;
       case 'fog':
-        $('.card-current').css('background-color', '#ffc107');
+        $('.card-header').css('background-color', '#ffc107');
         break;
       case 'cloudy':
-        $('.card-current').css('background-color', '#ffc107');
+        $('.card-header').css('background-color', '#ffc107');
         break;
       case 'partly-cloudy-day':
-        $('.card-current').css('background-color', '#009688');
+        $('.card-header').css('background-color', '#009688');
         break;
       case 'partly-cloudy-night':
-        $('.card-current').css('background-color', '#673ab7');
+        $('.card-header').css('background-color', '#673ab7');
         break;
       case 'hail':
-        $('.card-current').css('background-color', '#f44336');
+        $('.card-header').css('background-color', '#f44336');
         break;
       case 'thunderstorm':
-        $('.card-current').css('background-color', '#f44336');
+        $('.card-header').css('background-color', '#f44336');
         break;
       case 'tornado':
-        $('.card-current').css('background-color', '#f44336');
+        $('.card-header').css('background-color', '#f44336');
         break;
     }
   }

@@ -1,160 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Local Weather</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/font-awesome.min.css" />
-    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/bootstrap336.min.css" />
-    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/weather-icons.min.css" />
-    <link rel="stylesheet prefetch" href="https://rawgit.com/bomholtm/fcc/master/_assets/css/owl.carousel132.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../_assets/css/bootstrap441.min.css" />
+    <link rel="stylesheet" href="../../_assets/css/weather-icons.min.css" />
+    <link rel="stylesheet" href="../../_assets/css/slick182.min.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="card">
-            <div class="card-current">
-              <h2 id="location">Loading data <span>.</span><span>.</span><span>.</span></h2>
-              <h4 id="time">Day 0, Time</h4>
-              <h4 id="summary">Summary</h4>
-              <div class="temp">
-                <div id="temperature">0</div>
-                <div id="unit1">°C</div>
-                <a id="unit2">/ °F</a>
+    <main class="d-flex align-items-center">
+      <div class="container d-flex justify-content-center">
+        <div class="card shadow border-0">
+          <div class="card-header">
+            <h2 id="location">Loading data <span>.</span><span>.</span><span>.</span></h2>
+            <h4 id="time">Day 0, Time</h4>
+            <h4 id="summary">Summary</h4>
+            <div class="temp">
+              <div id="temperature">0</div>
+              <div id="unit1">°C</div>
+              <p>/</p>
+              <a id="unit2">°F</a>
+            </div>
+            <i id="icon" class="wi wi-na"></i>
+            <div class="precip">
+              <div class="precip-icon">
+                <i class="wi wi-raindrop"></i>
               </div>
-              <i id="icon" class="wi wi-na"></i>
-              <div class="precip">
-                <div class="precip-icon"><i class="wi wi-raindrop"></i></div>
-                <div id="precipitation">0%</div>
+              <div id="precipitation">0%</div>
+            </div>
+            <div class="wind">
+              <div class="wind-icon">
+                <i class="wi wi-strong-wind"></i>
               </div>
-              <div class="wind">
-                <div class="wind-icon"><i class="wi wi-strong-wind"></i></div>
-                <div id="windspeed">0 mph</div>
+              <div id="windspeed">0 mph</div>
+            </div>
+          </div>
+          <div class="card-body text-center">
+            <div id="carousel">
+              <div>
+                <p id="day-0">Day 0</p>
+                <i id="icon-day-0" class="wi wi-na"></i>
+                <div class="tempMax">
+                  <p id="tempMax-day-0">0</p>
+                  <span>°</span>
+                </div>
+                <div class="tempMin">
+                  <p id="tempMin-day-0">0</p>
+                  <span>°</span>
+                </div>
+              </div>
+              <div>
+                <p id="day-1">Day 1</p>
+                <i id="icon-day-1" class="wi wi-na"></i>
+                <div class="tempMax">
+                  <p id="tempMax-day-1">0</p>
+                  <span>°</span>
+                </div>
+                <div class="tempMin">
+                  <p id="tempMin-day-1">0</p>
+                  <span>°</span>
+                </div>
+              </div>
+              <div>
+                <p id="day-2">Day 2</p>
+                <i id="icon-day-2" class="wi wi-na"></i>
+                <div class="tempMax">
+                  <p id="tempMax-day-2">0</p>
+                  <span>°</span>
+                </div>
+                <div class="tempMin">
+                  <p id="tempMin-day-2">0</p>
+                  <span>°</span>
+                </div>
+              </div>
+              <div>
+                <p id="day-3">Day 3</p>
+                <i id="icon-day-3" class="wi wi-na"></i>
+                <div class="tempMax">
+                  <p id="tempMax-day-3">0</p>
+                  <span>°</span>
+                </div>
+                <div class="tempMin">
+                  <p id="tempMin-day-3">0</p>
+                  <span>°</span>
+                </div>
+              </div>
+              <div>
+                <p id="day-4">Day 4</p>
+                <i id="icon-day-4" class="wi wi-na"></i>
+                <div class="tempMax">
+                  <p id="tempMax-day-4">0</p>
+                  <span>°</span>
+                </div>
+                <div class="tempMin">
+                  <p id="tempMin-day-4">0</p>
+                  <span>°</span>
+                </div>
+              </div>
+              <div>
+                <p id="day-5">Day 5</p>
+                <i id="icon-day-5" class="wi wi-na"></i>
+                <div class="tempMax">
+                  <p id="tempMax-day-5">0</p>
+                  <span>°</span>
+                </div>
+                <div class="tempMin">
+                  <p id="tempMin-day-5">0</p>
+                  <span>°</span>
+                </div>
+              </div>
+              <div>
+                <p id="day-6">Day 6</p>
+                <i id="icon-day-6" class="wi wi-na"></i>
+                <div class="tempMax">
+                  <p id="tempMax-day-6">0</p>
+                  <span>°</span>
+                </div>
+                <div class="tempMin">
+                  <p id="tempMin-day-6">0</p>
+                  <span>°</span>
+                </div>
+              </div>
+              <div>
+                <p id="day-7">Day 7</p>
+                <i id="icon-day-7" class="wi wi-na"></i>
+                <div class="tempMax">
+                  <p id="tempMax-day-7">0</p>
+                  <span>°</span>
+                </div>
+                <div class="tempMin">
+                  <p id="tempMin-day-7">0</p>
+                  <span>°</span>
+                </div>
               </div>
             </div>
-            <div id="daybyday">
-              <div id="carousel" class="owl-carousel">
-                <div>
-                  <p id="day-0">Day 0</p>
-                  <i id="icon-day-0" class="wi wi-na"></i>
-                  <div class="tempMax">
-                    <p id="tempMax-day-0">0</p>
-                    <span>°</span>
-                  </div>
-                  <div class="tempMin">
-                    <p id="tempMin-day-0">0</p>
-                    <span>°</span>
-                  </div>
-                </div>
-                <div>
-                  <p id="day-1">Day 1</p>
-                  <i id="icon-day-1" class="wi wi-na"></i>
-                  <div class="tempMax">
-                    <p id="tempMax-day-1">0</p>
-                    <span>°</span>
-                  </div>
-                  <div class="tempMin">
-                    <p id="tempMin-day-1">0</p>
-                    <span>°</span>
-                  </div>
-                </div>
-                <div>
-                  <p id="day-2">Day 2</p>
-                  <i id="icon-day-2" class="wi wi-na"></i>
-                  <div class="tempMax">
-                    <p id="tempMax-day-2">0</p>
-                    <span>°</span>
-                  </div>
-                  <div class="tempMin">
-                    <p id="tempMin-day-2">0</p>
-                    <span>°</span>
-                  </div>
-                </div>
-                <div>
-                  <p id="day-3">Day 3</p>
-                  <i id="icon-day-3" class="wi wi-na"></i>
-                  <div class="tempMax">
-                    <p id="tempMax-day-3">0</p>
-                    <span>°</span>
-                  </div>
-                  <div class="tempMin">
-                    <p id="tempMin-day-3">0</p>
-                    <span>°</span>
-                  </div>
-                </div>
-                <div>
-                  <p id="day-4">Day 4</p>
-                  <i id="icon-day-4" class="wi wi-na"></i>
-                  <div class="tempMax">
-                    <p id="tempMax-day-4">0</p>
-                    <span>°</span>
-                  </div>
-                  <div class="tempMin">
-                    <p id="tempMin-day-4">0</p>
-                    <span>°</span>
-                  </div>
-                </div>
-                <div>
-                  <p id="day-5">Day 5</p>
-                  <i id="icon-day-5" class="wi wi-na"></i>
-                  <div class="tempMax">
-                    <p id="tempMax-day-5">0</p>
-                    <span>°</span>
-                  </div>
-                  <div class="tempMin">
-                    <p id="tempMin-day-5">0</p>
-                    <span>°</span>
-                  </div>
-                </div>
-                <div>
-                  <p id="day-6">Day 6</p>
-                  <i id="icon-day-6" class="wi wi-na"></i>
-                  <div class="tempMax">
-                    <p id="tempMax-day-6">0</p>
-                    <span>°</span>
-                  </div>
-                  <div class="tempMin">
-                    <p id="tempMin-day-6">0</p>
-                    <span>°</span>
-                  </div>
-                </div>
-                <div>
-                  <p id="day-7">Day 7</p>
-                  <i id="icon-day-7" class="wi wi-na"></i>
-                  <div class="tempMax">
-                    <p id="tempMax-day-7">0</p>
-                    <span>°</span>
-                  </div>
-                  <div class="tempMin">
-                    <p id="tempMin-day-7">0</p>
-                    <span>°</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="footer">
-              <a href="https://github.com/bomholtm/fcc" class="bomholt" target="_blank" rel="noopener noreferrer"
-                ><i class="fa fa-github-alt fa-lg"></i> bomholtm / fcc</a
-              >
-              <a href="https://darksky.net/poweredby/" target="_blank" rel="noopener noreferrer" class="hidden-xs"
-                >(powered by Dark Sky)</a
-              >
-              <a
-                href="https://darksky.net/poweredby/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="visible-xs-inline"
-                >(darksky.net)</a
-              >
-            </div>
+            <a href="https://darksky.net/poweredby/" target="_blank" rel="noopener noreferrer" class="card-link"
+              >Powered by Dark Sky</a
+            >
           </div>
         </div>
       </div>
-    </div>
-    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/jquery311.min.js"></script>
-    <script src="https://rawgit.com/bomholtm/fcc/master/_assets/js/owl.carousel132.min.js"></script>
-    <script src="index.js"></script>
+    </main>
+    <footer class="text-center">
+      <a href="https://github.com/b0mh0lt" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github-alt fa-lg"></i> M. Bomholt
+      </a>
+    </footer>
+    <script src="../../_assets/js/jquery341.min.js"></script>
+    <script src="../../_assets/js/slick182.min.js"></script>
+    <script src="../../_assets/js/brands.min.js"></script>
+    <script src="../../_assets/js/fontawesome.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
