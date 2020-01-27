@@ -1,181 +1,108 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14.5px;
+  font-size: 0.938rem;
   font-weight: 400;
-  line-height: 20px;
+  background-color: #fafafa;
 }
-.input-field input[type='text']:focus + label,
-.input-field input[type='number']:focus + label,
-.input-field input[type='email']:focus + label {
-  color: #607d8b;
+input[type='text']:focus + label,
+input[type='number']:focus + label,
+input[type='email']:focus + label {
+  color: #607d8b !important;
 }
-.input-field input[type='text']:focus,
-.input-field input[type='number']:focus,
-input[type='number']:focus.valid,
-.input-field input[type='email']:focus,
-input[type='email']:focus.valid,
-.input-field textarea[class='materialize-textarea']:focus {
-  border-bottom: 1px solid #607d8b;
-  box-shadow: 0 1px 0 0 #607d8b;
-}
-input[type='number'].valid,
-input[type='email'].valid {
-  border-bottom: 1px solid #9e9e9e;
-  box-shadow: none;
+input[type='text']:focus,
+input[type='number']:focus,
+input[type='email']:focus {
+  border-bottom: 1px solid #607d8b !important;
+  box-shadow: 0 1px 0 0 #607d8b !important;
 }
 .dropdown-content li > span {
   color: #607d8b;
 }
-.select-dropdown {
-  color: rgba(0, 0, 0, 0.87);
-}
-select {
-  top: 30px;
-  left: 50%;
-  z-index: -1;
-}
-.select-wrapper + label {
-  position: absolute;
-  top: -1.2rem;
-}
-#no-label:after {
-  top: 32px;
-}
-[type='radio']:checked + label:after {
+[type='radio']:checked + span:after {
   border: 2px solid #607d8b;
   background-color: #607d8b;
 }
-[type='checkbox'].filled-in:checked + label:before {
-  top: 2px;
-  margin: 2px;
+textarea.materialize-textarea:focus {
+  border-bottom: 1px solid #607d8b !important;
+  box-shadow: 0 1px 0 0 #607d8b !important;
 }
-[type='checkbox'].filled-in:checked + label:after {
+[type='checkbox'].filled-in:checked + span:not(.lever):after {
   border: 2px solid #607d8b;
   background-color: #607d8b;
-  margin: 2px;
-}
-[type='checkbox'].filled-in:not(:checked) + label:after {
-  margin: 2px;
 }
 .ribbon {
   background-color: #3f51b5;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 42vh;
   width: 100%;
 }
-main {
-  margin-top: -35vh;
-  -ms-flex-negative: 0;
+.card {
   flex-shrink: 0;
+  margin: -35vh 0 3rem;
 }
-main .card-container {
-  margin: 0 auto;
-  max-width: 1400px;
-  width: calc(100% - 16px);
+.card #title {
+  font-size: 1.875rem;
+  margin: 1.5rem 0.75rem 0;
 }
-main .card-container .card-content {
-  border-radius: 2px;
-  padding: 60px;
-  margin-bottom: 80px;
-  background-color: #fff;
+.card #description {
+  font-size: 0.875rem;
+  margin: 0.5rem 0.75rem 1rem;
 }
-@media (max-width: 700px) {
-  main .card-container .card-content {
-    padding: 40px;
-  }
+.card h5 {
+  color: #e91e63;
+  font-size: 1.25rem;
+  margin: 1.5rem 0.75rem;
+  border-bottom: 2px solid #e91e63;
 }
-@media (max-width: 650px) {
-  main .card-container .card-content {
-    padding: 30px;
-  }
+.card #questions p {
+  font-size: 1rem;
 }
-@media (max-width: 600px) {
-  main .card-container .card-content {
-    padding: 20px;
-  }
+.card #questions div {
+  margin: 0.75rem 0 1.25rem;
 }
-main .card-container .card-content form #title {
-  font-size: 1.75rem;
-  margin: 1.5rem 0 0 0.75rem;
-}
-main .card-container .card-content form #description {
-  font-size: 13px;
-  margin-left: 0.75rem;
-  margin-top: 0.25rem;
-  padding-bottom: 1rem;
-}
-main .card-container .card-content form h5 {
-  color: #ff4081;
-  font-size: 1.2rem;
-  margin: 1.5rem 0.75rem 0 0.75rem;
-  border-bottom: 2px solid #ff4081;
-}
-main .card-container .card-content form .heading1 {
-  margin-bottom: 2.25rem;
-}
-main .card-container .card-content form .heading-after {
-  margin-bottom: 1.25rem;
-}
-main .card-container .card-content form #questions div {
-  margin: 2px 0;
-}
-main .card-container .card-content form #questions .input-field-other {
+.card #questions .radio-input {
+  font-size: 1rem;
+  height: unset;
   margin: 0;
 }
-main .card-container .card-content form #questions .input-field-number,
-main .card-container .card-content form #questions .input-field-number,
-main .card-container .card-content form #questions .input-field-textarea {
-  margin: 0 0 0 4px;
+.card #questions .input-field.inline input {
+  font-size: 1rem;
+  height: 2rem;
+  margin-bottom: 0.25rem;
 }
-main .card-container .card-content form #agreement a {
+.card #questions .materialize-textarea {
+  font-size: 1rem;
+  margin: 0;
+}
+.card #agreement a {
   color: #607d8b;
   text-decoration: underline;
 }
-main .card-container .card-content form p {
-  margin-top: 1.25rem;
-  margin-bottom: 0.25rem;
-}
-main .card-container .card-content form .paragraph1 {
-  margin-top: 2.25rem;
-}
-main .card-container .card-content form .paragraph-after {
+.card #agreement button {
+  background-color: #607d8b;
   margin-top: 1.75rem;
 }
-main .card-container .card-content form .other {
-  height: 25px;
-}
-main .card-container .card-content form .number {
-  height: 25px;
-  margin-bottom: 0;
-}
-main .card-container .card-content form #textarea {
-  padding: 2px 0 2px 0;
-}
-main .card-container .card-content form #submit {
-  background-color: #607d8b;
-  margin-top: 2rem;
-}
 footer {
-  height: 60px;
-  color: #d0d0d0;
-  background-color: #424242;
+  background-color: #eee;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  height: 42px;
   width: 100%;
   text-align: center;
 }
 footer a {
-  color: #d0d0d0;
-  line-height: 60px;
+  color: #9e9e9e;
+  font-size: 0.875rem;
+  line-height: 42px;
   position: relative;
   top: 2px;
 }
 footer a:focus,
 footer a:hover,
 footer a:visited {
-  color: #d0d0d0;
+  color: #9e9e9e;
 }
-footer a .fa-lg {
-  vertical-align: text-top;
-  margin-right: 4px;
+footer a svg {
+  margin-right: 0.3125rem;
+  vertical-align: text-bottom !important;
 }
