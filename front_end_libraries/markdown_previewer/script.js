@@ -2,16 +2,15 @@ const projectName = 'markdown-previewer';
 localStorage.setItem('example_project', 'Markdown Previewer');
 
 const renderer = new marked.Renderer();
-renderer.link = function (href, title, text) {
+renderer.link = function(href, title, text) {
   return `<a target="_blank" href="${href}">${text}</a>`;
 };
 renderer.listitem = function(text) {
   if (text.includes('type="checkbox"')) {
-    return `<li style="list-style: none; margin-left: -10px;">${text}</li>`
+    return `<li style="list-style: none; margin-left: -10px;">${text}</li>`;
   }
-  return `<li>${text}</li>`
+  return `<li>${text}</li>`;
 };
-
 marked.setOptions({
   breaks: true,
   gfm: true,
@@ -19,53 +18,48 @@ marked.setOptions({
     return hljs.highlightAuto(code).value;
   }
 });
-
 class MarkdownPreviewer extends React.Component {
   constructor(props) {
     super(props);
-    this.state =  {
+    this.state = {
       markdown: init
-    }
+    };
   }
-  
   componentDidMount() {
     let editor = ace.edit('editor');
-    
     editor.setTheme('ace/theme/dracula');
     editor.session.setMode('ace/mode/markdown');
     editor.session.setUseWrapMode(true);
     editor.container.style.lineHeight = 1.15;
-    
     editor.renderer.setOptions({
       showPrintMargin: false,
-      fontSize: '14px',
+      fontSize: '.875rem',
       fontFamily: '"PT Mono", monospace'
     });
-    
     editor.setValue(this.state.markdown);
     editor.clearSelection();
-    
     editor.session.on('change', () => {
-      this.setState({markdown: editor.getValue()});
+      this.setState({ markdown: editor.getValue() });
     });
   }
-  
   render() {
-    return (
-      <div className='wrapper'>
-        <div id='editor'></div>
-        <div id='preview' dangerouslySetInnerHTML={{__html: marked(this.state.markdown, { renderer: renderer })}} />
-      </div>
-    )
+    return React.createElement(
+      'div',
+      { className: 'wrapper' },
+      React.createElement('div', { id: 'editor' }),
+      React.createElement('div', {
+        id: 'preview',
+        dangerouslySetInnerHTML: { __html: marked(this.state.markdown, { renderer: renderer }) }
+      })
+    );
   }
-};
-
+}
 const init = `
 # Structured documents
 
 Sometimes it's useful to have different levels of headings to structure your documents. Start lines with a \`#\` to create headings. You can use one \`#\` all the way up to \`######\` six for different heading sizes.
 
-It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to GitHub!](https://github.com/bomholtm/fcc) 😉
+It's very easy to make some words **bold** and other words *italic* with Markdown. You can even [link my GitHub profile!](https://github.com/b0mh0lt) 😉
 
 Tasks lists are my absolute favorite:
 
@@ -108,9 +102,6 @@ Sometimes you want numbered lists:
 2. Two
 3. Three
 
-`
+`;
 
-ReactDOM.render(
-  <MarkdownPreviewer />,
-  document.getElementById('root')
-);
+ReactDOM.render(React.createElement(MarkdownPreviewer, null), document.getElementById('root'));

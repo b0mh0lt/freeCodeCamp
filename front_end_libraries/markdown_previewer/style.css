@@ -18,10 +18,12 @@ h5,
 h6 {
   margin: 0 0 16px;
 }
-
 .wrapper {
+  display: -webkit-box;
   display: flex;
   flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
   height: 100vh;
 }
@@ -33,6 +35,8 @@ h6 {
 }
 @media only screen and (min-width: 992px) {
   .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     flex-direction: row;
   }
   #editor,
@@ -52,10 +56,9 @@ h6 {
 }
 #preview {
   padding: 16px;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 #preview code {
-  margin: 0 2px;
   padding: 0px 5px;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
@@ -64,16 +67,14 @@ h6 {
 }
 #preview pre {
   margin: 15px 0;
-  padding: 6px 10px;
+  padding: 5px 10px;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
   border-radius: 3px;
-  font-size: 13px;
-  line-height: 19px;
+  line-height: 1.5;
   overflow: auto;
 }
 #preview pre code {
-  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
