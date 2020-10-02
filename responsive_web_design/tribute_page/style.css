@@ -1,0 +1,82 @@
+html,
+body {
+  background-color: #e77d68;
+  height: 100%;
+}
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+main {
+  -webkit-box-flex: 1;
+  flex: 1 0 auto;
+  padding: 15px 0;
+}
+a:focus,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+.fa-lg {
+  font-size: 1.25em;
+}
+.fa-stack:hover {
+  -webkit-transform: scale(1.125);
+  transform: scale(1.125);
+}
+.fa-stack-1x {
+  color: #e77d68;
+}
+.fa-stack-2x {
+  color: #fade4b;
+}
+.card {
+  margin: 15px auto;
+  max-width: 420px;
+}
+.card-img-top img {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.card-body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+}
+.card-link {
+  color: #4c69af;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.card-link:hover {
+  color: #4c69af;
+}
+footer {
+  background-color: #cc6e5c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  height: 42px;
+  width: 100%;
+  text-align: center;
+}
+footer a {
+  color: #f2dbd6;
+  font-size: 0.875rem;
+  line-height: 42px;
+  position: relative;
+  top: 2px;
+}
+footer a:focus,
+footer a:hover,
+footer a:visited {
+  color: #f2dbd6;
+}
+footer a svg {
+  margin-right: 0.3125rem;
+  vertical-align: text-bottom !important;
+}
