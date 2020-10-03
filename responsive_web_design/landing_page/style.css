@@ -1,7 +1,7 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) .btn:focus,
@@ -20,19 +20,20 @@ h6 {
   text-transform: uppercase;
   text-align: center;
 }
-h1,
-h4 {
-  font-family: 'Press Start 2P', cursive;
+h1 {
+  font-family: "Press Start 2P", cursive;
 }
-h3 {
+h2 {
   font-weight: 300;
   color: #666;
   padding-top: 2rem;
+  font-size: 1.75rem;
 }
-h5 {
+h3 {
   font-weight: 300;
   color: #888;
   margin-bottom: 1.5rem;
+  font-size: 1.25rem;
 }
 p {
   color: #333;
@@ -60,7 +61,8 @@ hr {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url(./img/8bit.jpg) no-repeat center center #151e28;
+  background: url(https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/landing_page/img/8bit.jpg)
+    no-repeat center center #151e28;
   background-size: cover !important;
 }
 @media screen and (min-width: 992px) {
@@ -71,7 +73,8 @@ hr {
 #header .navbar {
   background: #171717;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
 }
 #header .navbar .navbar-brand {
   height: 44px;
@@ -102,6 +105,7 @@ hr {
   font-size: 14px;
 }
 #header .navbar .form-inline {
+  display: -webkit-box;
   display: flex;
   padding: 2rem 0;
   float: right;
@@ -157,9 +161,14 @@ hr {
   left: 0;
   bottom: 0;
   right: 0;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 #header .video-container iframe {
@@ -174,8 +183,11 @@ hr {
   height: 100%;
   position: relative;
   left: 0;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 #header .text-container h1 {
@@ -271,7 +283,7 @@ main #episodes a:hover p {
 main #exclusives {
   background-color: #f5f5f5;
 }
-main #exclusives h3 {
+main #exclusives h2 {
   margin-bottom: 2rem;
 }
 main #exclusives a {
@@ -299,7 +311,7 @@ main #exclusives p {
 main #about {
   text-align: center;
 }
-main #about h3 {
+main #about h2 {
   margin-bottom: 2rem;
 }
 footer {
@@ -336,20 +348,25 @@ footer .social-icons .icon {
     font-size: 3.5em;
   }
 }
-footer h4 {
+footer h2 {
   color: #fff;
   letter-spacing: 2px;
   margin-bottom: 1rem;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.5rem;
+  padding-top: 0;
 }
-footer h4 span {
+footer h2 span {
   margin-left: 10px;
 }
 footer p {
   color: #b2b5b9;
 }
 footer #form {
+  display: -webkit-box;
   display: flex;
   padding: 3rem 0 3rem 0;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 footer #form input {
