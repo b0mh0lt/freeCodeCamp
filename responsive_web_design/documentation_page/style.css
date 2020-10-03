@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 button:focus,
 a:focus {
@@ -10,7 +10,8 @@ a:focus {
 .navbar {
   border-bottom: 0.0625rem solid #f5eefe;
   background-color: #fff;
-  box-shadow: 0 0.25rem 0.3125rem 0 rgba(116, 76, 158, 0.07), 0 0.0625rem 0.625rem 0 rgba(157, 124, 191, 0.06),
+  box-shadow: 0 0.25rem 0.3125rem 0 rgba(116, 76, 158, 0.07),
+    0 0.0625rem 0.625rem 0 rgba(157, 124, 191, 0.06),
     0 0.125rem 0.25rem -0.0625rem rgba(157, 124, 191, 0.1);
 }
 .navbar .navbar-brand img {
@@ -109,7 +110,7 @@ a:focus {
 }
 #alt-navbar .dropdown-menu ul li .dropdown-item.active:before {
   color: #9d7cbf;
-  content: '• ';
+  content: "• ";
 }
 #navbar {
   background-color: #f6f3f8;
@@ -128,11 +129,10 @@ a:focus {
 }
 #navbar ul .nav-link.active:before {
   color: #9d7cbf;
-  content: '• ';
+  content: "• ";
 }
 #main-doc {
   color: #3d3347;
-  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   padding-top: 5rem;
   z-index: 2;
@@ -188,7 +188,7 @@ a:focus {
 }
 #main-doc section code {
   color: inherit;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 0.875rem;
   background-color: #fcf6f0;
   border-radius: 0.1875rem;
@@ -215,9 +215,10 @@ footer {
 }
 footer a {
   color: #c8b5d4;
-  line-height: 2.625rem;
+  font-size: 0.875rem;
+  line-height: 42px;
   position: relative;
-  top: 0.125rem;
+  top: 2px;
 }
 footer a:focus,
 footer a:hover,
@@ -226,6 +227,6 @@ footer a:visited {
   text-decoration: none;
 }
 footer a .fa-lg {
-  vertical-align: text-top;
-  margin-right: 0.25rem;
+  vertical-align: text-bottom !important;
+  margin-right: 0.3125rem;
 }
