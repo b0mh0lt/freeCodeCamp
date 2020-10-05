@@ -56,9 +56,11 @@ h6 {
 }
 #preview {
   padding: 16px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 #preview code {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875em;
   padding: 0px 5px;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
@@ -75,6 +77,8 @@ h6 {
   overflow: auto;
 }
 #preview pre code {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875em;
   padding: 0;
   border: none;
   background-color: transparent;

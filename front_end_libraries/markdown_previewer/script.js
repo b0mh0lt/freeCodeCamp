@@ -1,11 +1,11 @@
-const projectName = 'markdown-previewer';
-localStorage.setItem('example_project', 'Markdown Previewer');
+const projectName = "markdown-previewer";
+localStorage.setItem("example_project", "Markdown Previewer");
 
 const renderer = new marked.Renderer();
-renderer.link = function(href, title, text) {
+renderer.link = function (href, title, text) {
   return `<a target="_blank" href="${href}">${text}</a>`;
 };
-renderer.listitem = function(text) {
+renderer.listitem = function (text) {
   if (text.includes('type="checkbox"')) {
     return `<li style="list-style: none; margin-left: -10px;">${text}</li>`;
   }
@@ -14,42 +14,46 @@ renderer.listitem = function(text) {
 marked.setOptions({
   breaks: true,
   gfm: true,
-  highlight: function(code) {
-    return hljs.highlightAuto(code).value;
-  }
+});
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  document.querySelectorAll("pre code").forEach((block) => {
+    hljs.highlightBlock(block);
+  });
 });
 class MarkdownPreviewer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      markdown: init
+      markdown: init,
     };
   }
   componentDidMount() {
-    let editor = ace.edit('editor');
-    editor.setTheme('ace/theme/dracula');
-    editor.session.setMode('ace/mode/markdown');
+    let editor = ace.edit("editor");
+    editor.setTheme("ace/theme/dracula");
+    editor.session.setMode("ace/mode/markdown");
     editor.session.setUseWrapMode(true);
     editor.container.style.lineHeight = 1.15;
     editor.renderer.setOptions({
       showPrintMargin: false,
-      fontSize: '.875rem',
-      fontFamily: '"PT Mono", monospace'
+      fontSize: ".875rem",
+      fontFamily: '"IBM Plex Mono", monospace',
     });
+
     editor.setValue(this.state.markdown);
     editor.clearSelection();
-    editor.session.on('change', () => {
-      this.setState({ markdown: editor.getValue() });
+    editor.session.on("change", () => {
+      this.setState({markdown: editor.getValue()});
     });
   }
   render() {
     return React.createElement(
-      'div',
-      { className: 'wrapper' },
-      React.createElement('div', { id: 'editor' }),
-      React.createElement('div', {
-        id: 'preview',
-        dangerouslySetInnerHTML: { __html: marked(this.state.markdown, { renderer: renderer }) }
+      "div",
+      {className: "wrapper"},
+      React.createElement("div", {id: "editor"}),
+      React.createElement("div", {
+        id: "preview",
+        dangerouslySetInnerHTML: {__html: marked(this.state.markdown, {renderer: renderer})},
       })
     );
   }
@@ -81,7 +85,7 @@ function anotherExample(firstLine, lastLine) {
 
 If you want to embed images, this is how you do it:
 
-![Image of Hubot](https://octodex.github.com/images/hubot.jpg)
+![Image of Hubot](./img/hubot.jpg)
 
 If you'd like to quote someone, use the > character before the line:
 > Coffee. The finest organic suspension ever devised... I beat the Borg with it.
@@ -104,4 +108,4 @@ Sometimes you want numbered lists:
 
 `;
 
-ReactDOM.render(React.createElement(MarkdownPreviewer, null), document.getElementById('root'));
+ReactDOM.render(React.createElement(MarkdownPreviewer, null), document.getElementById("root"));
