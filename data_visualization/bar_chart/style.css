@@ -1,6 +1,6 @@
 body,
 text {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   margin: 0;
   padding: 0;
   background-color: #212121;
@@ -13,7 +13,7 @@ text {
   stroke-dasharray: 2.2;
 }
 footer {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
