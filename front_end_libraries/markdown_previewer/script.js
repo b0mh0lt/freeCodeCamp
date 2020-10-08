@@ -11,6 +11,7 @@ renderer.listitem = function (text) {
   }
   return `<li>${text}</li>`;
 };
+
 marked.setOptions({
   breaks: true,
   gfm: true,
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     hljs.highlightBlock(block);
   });
 });
+
 class MarkdownPreviewer extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +41,6 @@ class MarkdownPreviewer extends React.Component {
       fontSize: ".875rem",
       fontFamily: '"IBM Plex Mono", monospace',
     });
-
     editor.setValue(this.state.markdown);
     editor.clearSelection();
     editor.session.on("change", () => {
@@ -58,6 +59,7 @@ class MarkdownPreviewer extends React.Component {
     );
   }
 }
+
 const init = `
 # Structured documents
 
