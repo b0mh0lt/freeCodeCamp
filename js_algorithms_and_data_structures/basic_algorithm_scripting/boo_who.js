@@ -5,7 +5,7 @@ Boolean primitives are true and false.
 */
 
 function booWho(bool) {
-  return typeof bool === 'boolean';
+  return typeof bool === "boolean";
 }
 
 booWho(null);
@@ -13,9 +13,9 @@ booWho(true);
 booWho(false);
 booWho([1, 2, 3]);
 booWho([].slice);
-booWho({ a: 1 });
+booWho({a: 1});
 booWho(1);
 booWho(NaN);
-booWho('a');
-booWho('true');
-booWho('false');
+booWho("a");
+booWho("true");
+booWho("false");

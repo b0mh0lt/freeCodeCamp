@@ -9,12 +9,12 @@ function repeatStringNumTimes(str, num) {
   while (arr.length < num) {
     arr.push(str);
   }
-  return arr.join('');
+  return arr.join("");
 }
 
-repeatStringNumTimes('*', 3);
-repeatStringNumTimes('abc', 3);
-repeatStringNumTimes('abc', 4);
-repeatStringNumTimes('abc', 1);
-repeatStringNumTimes('*', 8);
-repeatStringNumTimes('abc', -2);
+repeatStringNumTimes("*", 3);
+repeatStringNumTimes("abc", 3);
+repeatStringNumTimes("abc", 4);
+repeatStringNumTimes("abc", 1);
+repeatStringNumTimes("*", 8);
+repeatStringNumTimes("abc", -2);

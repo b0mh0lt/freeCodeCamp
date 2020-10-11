@@ -21,12 +21,12 @@ function mutation(arr) {
   }
 }
 
-mutation(['hello', 'hey']);
-mutation(['hello', 'Hello']);
-mutation(['zyxwvutsrqponmlkjihgfedcba', 'qrstu']);
-mutation(['Mary', 'Army']);
-mutation(['Mary', 'Aarmy']);
-mutation(['Alien', 'line']);
-mutation(['floor', 'for']);
-mutation(['hello', 'neo']);
-mutation(['voodoo', 'no']);
+mutation(["hello", "hey"]);
+mutation(["hello", "Hello"]);
+mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]);
+mutation(["Mary", "Army"]);
+mutation(["Mary", "Aarmy"]);
+mutation(["Alien", "line"]);
+mutation(["floor", "for"]);
+mutation(["hello", "neo"]);
+mutation(["voodoo", "no"]);

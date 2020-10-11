@@ -5,12 +5,9 @@ Your result must be a string.
 */
 
 function reverseString(str) {
-  return str
-    .split('')
-    .reverse()
-    .join('');
+  return str.split("").reverse().join("");
 }
 
-reverseString('hello');
-reverseString('Howdy');
-reverseString('Greetings from Earth');
+reverseString("hello");
+reverseString("Howdy");
+reverseString("Greetings from Earth");

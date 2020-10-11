@@ -10,7 +10,7 @@ function chunkArrayInGroups(arr, size) {
   return groups;
 }
 
-chunkArrayInGroups(['a', 'b', 'c', 'd'], 2);
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
 chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3);
 chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);
 chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4);
