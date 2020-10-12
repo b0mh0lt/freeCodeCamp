@@ -8,27 +8,27 @@ We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and 
 
 function palindrome(str) {
   var rstr = str
-    .split('')
+    .split("")
     .reverse()
-    .join('')
+    .join("")
     .toLowerCase()
-    .replace(/[^a-zA-Z0-9]/g, '');
-  if (rstr === str.toLowerCase().replace(/[^a-zA-Z0-9]/g, '')) {
+    .replace(/[^a-zA-Z0-9]/g, "");
+  if (rstr === str.toLowerCase().replace(/[^a-zA-Z0-9]/g, "")) {
     return true;
   } else {
     return false;
   }
 }
 
-palindrome('eye');
-palindrome('_eye');
-palindrome('race car');
-palindrome('not a palindrome');
-palindrome('A man, a plan, a canal. Panama');
-palindrome('never odd or even');
-palindrome('nope');
-palindrome('almostomla');
-palindrome('My age is 0, 0 si ega ym.');
-palindrome('1 eye for of 1 eye.');
-palindrome('0_0 (: /- :) 0-0');
-palindrome('five|_/|four');
+palindrome("eye");
+palindrome("_eye");
+palindrome("race car");
+palindrome("not a palindrome");
+palindrome("A man, a plan, a canal. Panama");
+palindrome("never odd or even");
+palindrome("nope");
+palindrome("almostomla");
+palindrome("My age is 0, 0 si ega ym.");
+palindrome("1 eye for of 1 eye.");
+palindrome("0_0 (: /- :) 0-0");
+palindrome("five|_/|four");

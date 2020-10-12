@@ -10,7 +10,7 @@ Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do
 */
 
 function rot13(str) {
-  var encodedArr = str.split('');
+  var encodedArr = str.split("");
   var decodedArr = [];
   for (var i = 0; i < encodedArr.length; i++) {
     if (encodedArr[i].charCodeAt() >= 65 && encodedArr[i].charCodeAt() <= 77) {
@@ -21,10 +21,10 @@ function rot13(str) {
       decodedArr.push(encodedArr[i]);
     }
   }
-  return decodedArr.join('');
+  return decodedArr.join("");
 }
 
-rot13('SERR PBQR PNZC');
-rot13('SERR CVMMN!');
-rot13('SERR YBIR?');
-rot13('GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.');
+rot13("SERR PBQR PNZC");
+rot13("SERR CVMMN!");
+rot13("SERR YBIR?");
+rot13("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT.");
