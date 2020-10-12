@@ -9,20 +9,20 @@ If either argument isn't a valid number, return undefined.
 */
 
 function addTogether() {
-  if (arguments.length === 1 && typeof arguments[0] === 'number') {
+  if (arguments.length === 1 && typeof arguments[0] === "number") {
     var x = arguments[0];
-    return function(y) {
-      if (typeof y === 'number') {
+    return function (y) {
+      if (typeof y === "number") {
         return x + y;
       }
     };
-  } else if (typeof arguments[0] === 'number' && typeof arguments[1] === 'number') {
+  } else if (typeof arguments[0] === "number" && typeof arguments[1] === "number") {
     return arguments[0] + arguments[1];
   }
 }
 
 addTogether(2, 3);
 addTogether(2)(3);
-addTogether('http://bit.ly/IqT6zt');
-addTogether(2, '3');
+addTogether("http://bit.ly/IqT6zt");
+addTogether(2, "3");
 addTogether(2)([3]);

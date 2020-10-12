@@ -13,8 +13,8 @@ function fearNotLetter(str) {
   return undefined;
 }
 
-fearNotLetter('abce');
-fearNotLetter('abcdefghjklmno');
-fearNotLetter('stvwx');
-fearNotLetter('bcdf');
-fearNotLetter('abcdefghijklmnopqrstuvwxyz');
+fearNotLetter("abce");
+fearNotLetter("abcdefghjklmno");
+fearNotLetter("stvwx");
+fearNotLetter("bcdf");
+fearNotLetter("abcdefghijklmnopqrstuvwxyz");

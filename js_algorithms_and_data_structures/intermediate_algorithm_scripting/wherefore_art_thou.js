@@ -5,7 +5,7 @@ For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { f
 */
 
 function whatIsInAName(collection, source) {
-  var arr = collection.filter(function(obj) {
+  var arr = collection.filter(function (obj) {
     for (var i in source) {
       if (source[i] != obj[i]) {
         return false;
@@ -16,12 +16,9 @@ function whatIsInAName(collection, source) {
   return arr;
 }
 
-whatIsInAName(
-  [{ first: 'Romeo', last: 'Montague' }, { first: 'Mercutio', last: null }, { first: 'Tybalt', last: 'Capulet' }],
-  { last: 'Capulet' }
-);
-whatIsInAName([{ apple: 1 }, { apple: 1 }, { apple: 1, bat: 2 }], { apple: 1 });
-whatIsInAName([{ apple: 1, bat: 2 }, { bat: 2 }, { apple: 1, bat: 2, cookie: 2 }], { apple: 1, bat: 2 });
-whatIsInAName([{ apple: 1, bat: 2 }, { apple: 1 }, { apple: 1, bat: 2, cookie: 2 }], { apple: 1, cookie: 2 });
-whatIsInAName([{ apple: 1, bat: 2 }, { apple: 1 }, { apple: 1, bat: 2, cookie: 2 }, { bat: 2 }], { apple: 1, bat: 2 });
-whatIsInAName([{ a: 1, b: 2, c: 3 }], { a: 1, b: 9999, c: 3 });
+whatIsInAName([{first: "Romeo", last: "Montague"}, {first: "Mercutio", last: null}, {first: "Tybalt", last: "Capulet"}], {last: "Capulet"});
+whatIsInAName([{apple: 1}, {apple: 1}, {apple: 1, bat: 2}], {apple: 1});
+whatIsInAName([{apple: 1, bat: 2}, {bat: 2}, {apple: 1, bat: 2, cookie: 2}], {apple: 1, bat: 2});
+whatIsInAName([{apple: 1, bat: 2}, {apple: 1}, {apple: 1, bat: 2, cookie: 2}], {apple: 1, cookie: 2});
+whatIsInAName([{apple: 1, bat: 2}, {apple: 1}, {apple: 1, bat: 2, cookie: 2}, {bat: 2}], {apple: 1, bat: 2});
+whatIsInAName([{a: 1, b: 2, c: 3}], {a: 1, b: 9999, c: 3});

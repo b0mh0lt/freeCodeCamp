@@ -12,24 +12,24 @@ function pairElement(str) {
   var arr = [];
   for (var i = 0; i < str.length; i++) {
     switch (str.charAt(i)) {
-      case 'A':
-        arr.push(['A', 'T']);
+      case "A":
+        arr.push(["A", "T"]);
         break;
-      case 'C':
-        arr.push(['C', 'G']);
+      case "C":
+        arr.push(["C", "G"]);
         break;
-      case 'G':
-        arr.push(['G', 'C']);
+      case "G":
+        arr.push(["G", "C"]);
         break;
-      case 'T':
-        arr.push(['T', 'A']);
+      case "T":
+        arr.push(["T", "A"]);
         break;
     }
   }
   return arr;
 }
 
-pairElement('GCG');
-pairElement('ATCGA');
-pairElement('TTGAG');
-pairElement('CTCTA');
+pairElement("GCG");
+pairElement("ATCGA");
+pairElement("TTGAG");
+pairElement("CTCTA");

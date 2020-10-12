@@ -10,7 +10,7 @@ function sumAll(arr) {
     arr.push(i);
     i++;
   }
-  var sum = arr.reduce(function(a, b) {
+  var sum = arr.reduce(function (a, b) {
     return a + b;
   });
   return sum;

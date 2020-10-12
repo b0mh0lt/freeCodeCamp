@@ -12,7 +12,7 @@ function sumPrimes(num) {
       sum.push(i);
     }
   }
-  return sum.reduce(function(a, b) {
+  return sum.reduce(function (a, b) {
     return a + b;
   });
 }
