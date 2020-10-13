@@ -16,7 +16,7 @@
 - [ ] **Quality Assurance**
 - [ ] **Information Security**
 - [ ] **Coding Interview Prep**
-  - [Take Home Projects](https://github.com/b0mh0lt/freeCodeCamp/) (5/20)
+  - [Take Home Projects](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/take_home_projects) (5/20)
 
 &nbsp;
 
@@ -94,46 +94,3 @@
 
 - Visualize Data with a Treemap Diagram
 
-&nbsp;
-
-## Legacy Front End Development
-
-- [**Build a Tribute Page**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/tribute_page)
-
-  [![](_assets/README/tribute_page.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/tribute_page)
-
-- [**Build a Personal Portfolio Webpage**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/personal_portfolio)
-
-  [![](_assets/README/personal_portfolio.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/personal_portfolio)
-
-- [**Build a Random Quote Machine**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/random_quote_machine)
-
-  [![](_assets/README/random_quote_machine.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/random_quote_machine)
-
-- [**Show the Local Weather**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/local_weather)
-
-  [![](_assets/README/local_weather.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/local_weather)
-
-- [**Build a Wikipedia Viewer**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/wikipedia_viewer)
-
-  [![](_assets/README/wikipedia_viewer.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/wikipedia_viewer)
-
-- [**Use the Twitch.tv JSON API**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/twitch_status)
-
-  [![](_assets/README/twitch_status.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/twitch_status)
-
-- [**Build a JavaScript Calculator**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/js_calculator)
-
-  [![](_assets/README/js_calculator.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/js_calculator)
-
-- [**Build a Pomodoro Clock**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/pomodoro_clock)
-
-  [![](_assets/README/pomodoro_clock.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/pomodoro_clock)
-
-- [**Build a Tic Tac Toe Game**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/tic_tac_toe)
-
-  [![](_assets/README/tic_tac_toe.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/tic_tac_toe)
-
-- [**Build a Simon Game**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/simon_game)
-
-  [![](_assets/README/simon_game.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/simon_game)
