@@ -4,19 +4,22 @@
 
 &nbsp;
 
-## freeCodeCamp Curriculum
+## Curriculum
 
 - [x] [**Responsive Web Design**](https://github.com/b0mh0lt/freeCodeCamp#responsive-web-design) **(5/5)**
 - [x] [**JavaScript Algorithms and Data Structures**](https://github.com/b0mh0lt/freeCodeCamp#javascript-algorithms-and-data-structures) **(5/5)**
-  - [Basic Algorithm Scripting](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/basic_algorithm_scripting) (16/16)
-  - [Intermediate Algorithm Scripting](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/intermediate_algorithm_scripting) (21/21)
+  - [x] [Basic Algorithm Scripting](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/basic_algorithm_scripting) (16/16)
+  - [x] [Intermediate Algorithm Scripting](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/intermediate_algorithm_scripting) (21/21)
 - [ ] [**Front End Libraries**](https://github.com/b0mh0lt/freeCodeCamp#front-end-libraries) **(4/5)**
 - [ ] [**Data Visualization**](https://github.com/b0mh0lt/freeCodeCamp#data-visualization) **(3/5)**
 - [ ] **API and Microservices**
 - [ ] **Quality Assurance**
+- **~~Scientific Computing with Python~~**
+- **~~Data Analysis with Python~~**
 - [ ] **Information Security**
-- [ ] **Coding Interview Prep**
-  - [Take Home Projects](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/take_home_projects) (5/20)
+- **~~Machine Learning with Python~~**
+- **Coding Interview Prep**
+  - [ ] [Take Home Projects](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/take_home_projects) (5/20)
 
 &nbsp;
 
