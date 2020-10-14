@@ -12,28 +12,30 @@
   - [x] [Intermediate Algorithm Scripting](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/intermediate_algorithm_scripting) (21/21)
 - [ ] [**Front End Libraries**](https://github.com/b0mh0lt/freeCodeCamp#front-end-libraries) **(4/5)**
 - [ ] [**Data Visualization**](https://github.com/b0mh0lt/freeCodeCamp#data-visualization) **(3/5)**
-- [ ] **API and Microservices**
-- [ ] **Quality Assurance**
+- [ ] **API and Microservices** **(0/5)**
+- [ ] **Quality Assurance** **(0/5)**
 - **~~Scientific Computing with Python~~**
 - **~~Data Analysis with Python~~**
-- [ ] **Information Security**
+- [ ] **Information Security** **(0/5)**
 - **~~Machine Learning with Python~~**
 - **Coding Interview Prep**
+  - [ ] Algorithms (4/9)
   - [ ] [Take Home Projects](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/take_home_projects) (5/20)
+  - [ ] Project Euler (2/480)
 
 &nbsp;
 
 ## Responsive Web Design
 
-- [**Build a Tribute Page**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/tribute_page)
+- [**Build a Tribute Page**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/tribute_page)
 
-  [![](_assets/README/tribute_page.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/tribute_page)
+  [![](_assets/README/tribute_page.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/tribute_page)
 
 - [**Build a Survey Form**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/survey_form)
 
   [![](_assets/README/survey_form.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/survey_form)
 
-- [**Build A Product Landing Page**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/landing_page)
+- [**Build a Product Landing Page**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/landing_page)
 
   [![](_assets/README/landing_page.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/landing_page)
 
@@ -41,9 +43,9 @@
 
   [![](_assets/README/documentation_page.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/documentation_page)
 
-- [**Build a Personal Portfolio Webpage**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/personal_portfolio)
+- [**Build a Personal Portfolio Webpage**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/personal_portfolio)
 
-  [![](_assets/README/personal_portfolio.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/personal_portfolio)
+  [![](_assets/README/personal_portfolio.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/personal_portfolio)
 
 &nbsp;
 
@@ -59,23 +61,23 @@
 
 ## Front End Libraries
 
-- [**Build a Random Quote Machine**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/random_quote_machine)
+- [**Build a Random Quote Machine**](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/random_quote_machine)
 
-  [![](_assets/README/random_quote_machine.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/random_quote_machine)
+  [![](_assets/README/random_quote_machine.png)](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/random_quote_machine)
 
-- [**Build A Markdown Previewer**](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/markdown_previewer)
+- [**Build a Markdown Previewer**](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/markdown_previewer)
 
   [![](_assets/README/markdown_previewer.png)](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/markdown_previewer)
 
-- Build A Drum Machine
+- Build a Drum Machine
 
-- [**Build a JavaScript Calculator**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/js_calculator)
+- [**Build a JavaScript Calculator**](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/js_calculator)
 
-  [![](_assets/README/js_calculator.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/js_calculator)
+  [![](_assets/README/js_calculator.png)](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/js_calculator)
 
-- [**Build a Pomodoro Clock**](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/pomodoro_clock)
+- [**Build a 25 + 5 Clock**](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/25_5_clock)
 
-  [![](_assets/README/pomodoro_clock.png)](https://b0mh0lt.github.io/freeCodeCamp/legacy_front_end_development/pomodoro_clock)
+  [![](_assets/README/pomodoro_clock.png)](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/25_5_clock)
 
 &nbsp;
 
