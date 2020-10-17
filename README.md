@@ -14,10 +14,10 @@
 - [ ] [**Data Visualization**](https://github.com/b0mh0lt/freeCodeCamp#data-visualization) **(3/5)**
 - [ ] **API and Microservices** **(0/5)**
 - [ ] **Quality Assurance** **(0/5)**
-- **~~Scientific Computing with Python~~**
-- **~~Data Analysis with Python~~**
+- [ ] **Scientific Computing with Python** **(0/5)**
+- [ ] **Data Analysis with Python** **(0/5)**
 - [ ] **Information Security** **(0/5)**
-- **~~Machine Learning with Python~~**
+- [ ] **Machine Learning with Python** **(0/5)**
 - **Coding Interview Prep**
   - [ ] Algorithms (4/9)
   - [ ] [Take Home Projects](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/take_home_projects) (5/20)
