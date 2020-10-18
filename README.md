@@ -19,8 +19,10 @@
 - [ ] **Information Security** **(0/5)**
 - [ ] **Machine Learning with Python** **(0/5)**
 - **Coding Interview Prep**
-  - [ ] Algorithms (4/9)
+  - [ ] [Algorithms](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/algorithms) (4/9)
+  - [ ] Data Structures (0/46)
   - [ ] [Take Home Projects](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/take_home_projects) (5/20)
+  - [ ] Rosetta Code (0/160)
   - [ ] Project Euler (2/480)
 
 &nbsp;
