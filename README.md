@@ -7,21 +7,21 @@
 ## Curriculum
 
 - [x] [**Responsive Web Design**](https://github.com/b0mh0lt/freeCodeCamp#responsive-web-design) **(5/5)**
-- [x] [**JavaScript Algorithms and Data Structures**](https://github.com/b0mh0lt/freeCodeCamp#javascript-algorithms-and-data-structures) **(5/5)**
+- [x] [JavaScript Algorithms and Data Structures](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures) (5/5)
   - [x] [Basic Algorithm Scripting](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/basic_algorithm_scripting) (16/16)
   - [x] [Intermediate Algorithm Scripting](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/intermediate_algorithm_scripting) (21/21)
 - [ ] [**Front End Libraries**](https://github.com/b0mh0lt/freeCodeCamp#front-end-libraries) **(4/5)**
 - [ ] [**Data Visualization**](https://github.com/b0mh0lt/freeCodeCamp#data-visualization) **(3/5)**
-- [ ] **API and Microservices** **(0/5)**
-- [ ] **Quality Assurance** **(0/5)**
-- [ ] **Scientific Computing with Python** **(0/5)**
-- [ ] **Data Analysis with Python** **(0/5)**
-- [ ] **Information Security** **(0/5)**
-- [ ] **Machine Learning with Python** **(0/5)**
-- **Coding Interview Prep**
+- [ ] API and Microservices (0/5)
+- [ ] Quality Assurance (0/5)
+- [ ] Scientific Computing with Python (0/5)
+- [ ] Data Analysis with Python (0/5)
+- [ ] Information Security (0/5)
+- [ ] Machine Learning with Python (0/5)
+- [ ] Coding Interview Prep
   - [ ] [Algorithms](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/algorithms) (4/9)
   - [ ] Data Structures (0/46)
-  - [ ] [Take Home Projects](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/take_home_projects) (5/20)
+  - [ ] [**Take Home Projects**](https://github.com/b0mh0lt/freeCodeCamp#take_home_projects) **(5/20)**
   - [ ] Rosetta Code (0/160)
   - [ ] Project Euler (2/480)
 
@@ -48,16 +48,6 @@
 - [**Build a Personal Portfolio Webpage**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/personal_portfolio)
 
   [![](_assets/README/personal_portfolio.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/personal_portfolio)
-
-&nbsp;
-
-## JavaScript Algorithms and Data Structures
-
-- [**Palindrome Checker**](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/palindrome_checker.js)
-- [**Roman Numeral Converter**](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/roman_numeral_converter.js)
-- [**Caesars Cipher**](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/caesars_cipher.js)
-- [**Telephone Number Validator**](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/telephone_number_validator.js)
-- [**Cash Register**](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/cash_register.js)
 
 &nbsp;
 
@@ -101,3 +91,6 @@
 
 - Visualize Data with a Treemap Diagram
 
+&nbsp;
+
+## Take Home Projects
