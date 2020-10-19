@@ -12,16 +12,16 @@
   - [x] [Intermediate Algorithm Scripting](https://github.com/b0mh0lt/freeCodeCamp/tree/master/js_algorithms_and_data_structures/intermediate_algorithm_scripting) (21/21)
 - [ ] [**Front End Libraries**](https://github.com/b0mh0lt/freeCodeCamp#front-end-libraries) **(4/5)**
 - [ ] [**Data Visualization**](https://github.com/b0mh0lt/freeCodeCamp#data-visualization) **(3/5)**
-- [ ] API and Microservices (0/5)
-- [ ] Quality Assurance (0/5)
-- [ ] Scientific Computing with Python (0/5)
-- [ ] Data Analysis with Python (0/5)
-- [ ] Information Security (0/5)
-- [ ] Machine Learning with Python (0/5)
+- [ ] **API and Microservices (0/5)**
+- [ ] **Quality Assurance (0/5)**
+- [ ] **Scientific Computing with Python (0/5)**
+- [ ] **Data Analysis with Python (0/5)**
+- [ ] **Information Security (0/5)**
+- [ ] **Machine Learning with Python (0/5)**
 - [ ] Coding Interview Prep
   - [ ] [Algorithms](https://github.com/b0mh0lt/freeCodeCamp/tree/master/coding_interview_prep/algorithms) (4/9)
   - [ ] Data Structures (0/46)
-  - [ ] [**Take Home Projects**](https://github.com/b0mh0lt/freeCodeCamp#take_home_projects) **(5/20)**
+  - [ ] [**Take Home Projects**](https://github.com/b0mh0lt/freeCodeCamp#take-home-projects) **(5/20)**
   - [ ] Rosetta Code (0/160)
   - [ ] Project Euler (2/480)
 
