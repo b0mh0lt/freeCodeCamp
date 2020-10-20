@@ -35,7 +35,7 @@
 
 - [**Build a Survey Form**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/survey_form)
 
-  [![](_assets/README/survey_form.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/survey_form)
+  [![](_assets/README/todo.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/survey_form)
 
 - [**Build a Product Landing Page**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/landing_page)
 
@@ -47,7 +47,7 @@
 
 - [**Build a Personal Portfolio Webpage**](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/personal_portfolio)
 
-  [![](_assets/README/personal_portfolio.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/personal_portfolio)
+  [![](_assets/README/todo.png)](https://b0mh0lt.github.io/freeCodeCamp/responsive_web_design/personal_portfolio)
 
 &nbsp;
 
@@ -65,11 +65,11 @@
 
 - [**Build a JavaScript Calculator**](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/js_calculator)
 
-  [![](_assets/README/js_calculator.png)](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/js_calculator)
+  [![](_assets/README/todo.png)](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/js_calculator)
 
 - [**Build a 25 + 5 Clock**](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/25_5_clock)
 
-  [![](_assets/README/pomodoro_clock.png)](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/25_5_clock)
+  [![](_assets/README/todo.png)](https://b0mh0lt.github.io/freeCodeCamp/front_end_libraries/25_5_clock)
 
 &nbsp;
 
@@ -94,3 +94,7 @@
 &nbsp;
 
 ## Take Home Projects
+
+- [**Show the Local Weather**](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/local_weather)
+
+  [![](_assets/README/todo.png)](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/local_weather)
