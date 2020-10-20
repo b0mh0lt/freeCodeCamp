@@ -31,7 +31,6 @@ a:visited {
   border-radius: 2px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  font-family: "Open Sans", sans-serif;
   margin: 2rem 0;
   max-width: 480px;
 }
@@ -39,6 +38,7 @@ a:visited {
   position: relative;
 }
 .card .card-image h3 {
+  font-family: "Open Sans", sans-serif;
   bottom: 0;
   color: #fff;
   margin: 0;
@@ -52,13 +52,15 @@ a:visited {
   position: relative;
 }
 .card .card-section #text {
+  font-family: "Open Sans", sans-serif;
   color: #212121;
-  font-size: 1.0625rem;
+  font-size: 1.25rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 .card .card-section #episode {
+  font-family: "Open Sans", sans-serif;
   color: #9e9e9e;
   bottom: 0;
   right: 0;
