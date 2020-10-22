@@ -97,4 +97,4 @@
 
 - [**Show the Local Weather**](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/local_weather)
 
-  [![](_assets/README/todo.png)](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/local_weather)
+  [![](_assets/README/local_weather.png)](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/local_weather)
