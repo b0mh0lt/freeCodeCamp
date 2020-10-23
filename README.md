@@ -95,6 +95,6 @@
 
 ## Take Home Projects
 
-- [**Show the Local Weather**](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/local_weather)
+- [**Show the Local Weather**](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/take_home_projects/local_weather)
 
-  [![](_assets/README/local_weather.png)](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/local_weather)
+  [![](_assets/README/local_weather.png)](https://b0mh0lt.github.io/freeCodeCamp/coding_interview_prep/take_home_projects/local_weather)
